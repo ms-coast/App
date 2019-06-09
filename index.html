@@ -10,170 +10,248 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="manifest" href="/manifest.json">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 </head>
 
 <body>
-    <div class="top-navigation">
-        <div class="logo-container">
-            <img src="Branding/harrison-county-mark-01.svg">
-        </div>
-    </div>
+   
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slideout-menu {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 256px;
+            min-height: 100vh;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            z-index: 0;
+            display: none;
+        }
+
+        .slideout-menu-left {
+            left: 0;
+        }
+
+        .slideout-menu-right {
+            right: 0;
+        }
+
+        .slideout-panel {
+            position: relative;
+            z-index: 1;
+            will-change: transform;
+            background-color: #FFF;
+            /* A background-color is required */
+            min-height: 100vh;
+        }
+
+        .slideout-open,
+        .slideout-open body,
+        .slideout-open .slideout-panel {
+            overflow: hidden;
+        }
+
+        .slideout-open .slideout-menu {
+            display: block;
+        }
+    </style>
+
+    <nav id="menu">
+        <header>
+            <h2>Menu</h2>
+        </header>
+    </nav>
 
     <div class="bottom-navigation">
-        <div class="nav-support">
-            <div class="navigator-container"><a href=""><img src="Assets/Home.svg"></a></div>
-
-            <div class="navigator-container"><a href=""><img src="Assets/Events.svg"></a></div>
-
-            <div class="navigator-container"><a href=""><img src="Assets/Account.svg"></a></div>
+            <div class="nav-support">
+                <div class="navigator-container"><a href=""><img src="Assets/Home.svg"></a></div>
+    
+                <div class="navigator-container"><a href=""><img src="Assets/Events.svg"></a></div>
+    
+                <div class="navigator-container"><a href=""><img src="Assets/Account.svg"></a></div>
+            </div>
         </div>
-    </div>
-    <div class="homescreen">
-        <div class="spacer"></div>
-        <div class="feed">
-            <div class="feed-text-container">
-                <div class="text-wrapper">
-                    <h3>Harrison County</h3>
-                    <h4>Development Commision</h4>
+    <main id="panel">
+            <div class="top-navigation">
+                    <div class="logo-container">
+                        <img src="Branding/harrison-county-mark-01.svg">
+                    </div>
                 </div>
-
-
+            
+            
+            
+              
+        <div class="homescreen">
+                
+            <div class="spacer"></div>
+            <div class="feed">
+                <div class="feed-text-container">
+                    <div class="text-wrapper">
+                        <h3>Harrison County</h3>
+                        <h4>Development Commision</h4>
+                    </div>
+    
+    
+                </div>
+    
+    
             </div>
-
-
-        </div>
-
-        <img class="hero-img" src="Images/lighthous.jpg">
-
-        <div class="action-button">
-            <a href="">
-                <button>View Bill</button>
-            </a>
-            <a href=""><button style="background-color: #1C2857;color: white;">Make A Payment</button></a>
-        </div>
-
-        <div class="swipe-container">
-            <h3>Starting A Business?</h3>
-            <div class="sub-swipe">
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-
-                <a href="#"><img src="https://via.placeholder.com/350s
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
+    
+            <img class="hero-img" src="Images/lighthous.jpg">
+    
+            <div class="action-button">
+                <a href="">
+                    <button>View Bill</button>
+                </a>
+                <a href=""><button style="background-color: #1C2857;color: white;">Make A Payment</button></a>
             </div>
-        </div>
-
-        <div class="swipe-container">
-            <h3>Events</h3>
-            <div class="sub-swipe">
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
+    
+            <div class="swipe-container">
+                <h3>Starting A Business?</h3>
+                <div class="sub-swipe">
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+    
+                    <a href="#"><img src="https://via.placeholder.com/350s
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+                </div>
             </div>
-        </div>
-
-        <div class="swipe-container">
-            <h3>News</h3>
-            <div class="sub-swipe">
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
+    
+            <div class="swipe-container">
+                <h3>Events</h3>
+                <div class="sub-swipe">
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+                </div>
             </div>
-        </div>
-        <div class="swipe-container">
-            <h3>Media</h3>
-            <div class="sub-swipe">
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
-
-                <a href="#"><img src="https://via.placeholder.com/350
-
-C/O https://placeholder.com/"></a>
+    
+            <div class="swipe-container">
+                <h3>News</h3>
+                <div class="sub-swipe">
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+                </div>
             </div>
+            <div class="swipe-container">
+                <h3>Media</h3>
+                <div class="sub-swipe">
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+    
+                    <a href="#"><img src="https://via.placeholder.com/350
+    
+    C/O https://placeholder.com/"></a>
+                </div>
+            </div>
+    
+    
+            <div class="spacer"></div>
+    
         </div>
+    
+    
+        <div class="account">
+    
+        </div>
+    
+        <input class="search-input vivify fadeInRight duration-600" type="text" id="mySearch" onkeyup="myFunction()"
+            placeholder="&emsp; Search Harrison County..." title="Search HCDC"><i
+            class="material-icons search-icon">search</i>
+        <ul id="myMenu" class="teacher-list">
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
+    
+    
+        </ul>
+        <script>function myFunction() {
+                var e, s, t;
+                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"
+            }</script>
+        </div>
+    
+    </main>
 
+    <script src="dist/slideout.min.js"></script>
+    <script>
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 256,
+            'tolerance': 70
+        });
 
-        <div class="spacer"></div>
+        // Toggle button
+        document.querySelector('.toggle-button').addEventListener('click', function () {
+            slideout.toggle();
+        });
+    </script>
 
-    </div>
-
-
-    <div class="account">
-
-    </div>
-
-    <input class="search-input vivify fadeInRight duration-600" type="text" id="mySearch" onkeyup="myFunction()"
-        placeholder="&emsp; Search Harrison County..." title="Search HCDC"><i
-        class="material-icons search-icon">search</i>
-    <ul id="myMenu" class="teacher-list">
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
-
-
-    </ul>
-    <script>function myFunction() {
-            var e, s, t;
-            for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"
-        }</script>
-    </div>
-
+    
 
 
 </body>
