@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   
+
 
     <style>
         body {
@@ -63,32 +63,25 @@
     </style>
 
     <nav id="menu">
-        <header>
-            <h2>Menu</h2>
-        </header>
+      <div class="menu-branding"><h3>HARRISON COUNTY </h3><h4>Development Commission </h4></div>
     </nav>
 
-    <div class="bottom-navigation">
-            <div class="nav-support">
-                <div class="navigator-container"><a href=""><img src="Assets/Home.svg"></a></div>
-    
-                <div class="navigator-container"><a href=""><img src="Assets/Events.svg"></a></div>
-    
-                <div class="navigator-container"><a href=""><img src="Assets/Account.svg"></a></div>
-            </div>
-        </div>
+
     <main id="panel">
-            <div class="top-navigation">
-                    <div class="logo-container">
-                        <img src="Branding/harrison-county-mark-01.svg">
-                    </div>
-                </div>
-            
-            
-            
-              
+        <div class="top-navigation">
+            <div class="logo-container">
+                <img src="Branding/harrison-county-mark-01.svg">
+            </div>
+
+            <button class="open" onclick="slideout.open();"><i class="material-icons">menu</i></button>
+            <button class="close" onclick="slideout.close();"><i class="material-icons">close</i></button>
+        </div>
+
+
+
+
         <div class="homescreen">
-                
+
             <div class="spacer"></div>
             <div class="feed">
                 <div class="feed-text-container">
@@ -96,85 +89,85 @@
                         <h3>Harrison County</h3>
                         <h4>Development Commision</h4>
                     </div>
-    
-    
+
+
                 </div>
-    
-    
+
+
             </div>
-    
+
             <img class="hero-img" src="Images/lighthous.jpg">
-    
+
             <div class="action-button">
                 <a href="">
                     <button>View Bill</button>
                 </a>
                 <a href=""><button style="background-color: #1C2857;color: white;">Make A Payment</button></a>
             </div>
-    
+
             <div class="swipe-container">
                 <h3>Starting A Business?</h3>
                 <div class="sub-swipe">
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
-    
+
+
                     <a href="#"><img src="https://via.placeholder.com/350s
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
                 </div>
             </div>
-    
+
             <div class="swipe-container">
                 <h3>Events</h3>
                 <div class="sub-swipe">
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
-    
+
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
                 </div>
             </div>
-    
+
             <div class="swipe-container">
                 <h3>News</h3>
                 <div class="sub-swipe">
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
-    
+
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
@@ -183,36 +176,36 @@
             <div class="swipe-container">
                 <h3>Media</h3>
                 <div class="sub-swipe">
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
-    
+
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
-    
+
                     <a href="#"><img src="https://via.placeholder.com/350
     
     C/O https://placeholder.com/"></a>
                 </div>
             </div>
-    
-    
+
+
             <div class="spacer"></div>
-    
+
         </div>
-    
-    
+
+
         <div class="account">
-    
+
         </div>
-    
+
         <input class="search-input vivify fadeInRight duration-600" type="text" id="mySearch" onkeyup="myFunction()"
             placeholder="&emsp; Search Harrison County..." title="Search HCDC"><i
             class="material-icons search-icon">search</i>
@@ -225,15 +218,15 @@
                     href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
             <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
                     href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
-    
-    
+
+
         </ul>
         <script>function myFunction() {
                 var e, s, t;
                 for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"
             }</script>
         </div>
-    
+
     </main>
 
     <script src="dist/slideout.min.js"></script>
@@ -251,7 +244,7 @@
         });
     </script>
 
-    
+
 
 
 </body>
