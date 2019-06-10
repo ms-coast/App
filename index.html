@@ -63,19 +63,31 @@
     </style>
 
     <nav id="menu">
-      <div class="menu-branding"><h3>HARRISON COUNTY </h3><h4>Development Commission </h4></div>
-    </nav>
+        <div class="spacer" style="height: 40px"></div>
+        <div class="menu-branding">
+            <h3>HARRISON COUNTY </h3>
+            <h4>Development Commission </h4>
+        </div>
+        <div class="divider"></div>
+        <div class="button-container">
+            <button class="menu-button"><i class="material-icons">home</i>Home</button>
+            <button class="menu-button"><i class="material-icons">home</i>Home</button>
+            <button class="menu-button"><i class="material-icons">home</i>Home</button>
+            <button class="menu-button"><i class="material-icons">home</i>Home</button>
+        </div>
 
+    </nav>
+    <div class="top-navigation">
+        <div class="logo-container">
+            <img src="Branding/harrison-county-mark-01.svg">
+        </div>
+
+        <button class="open" onclick="slideout.open();"><i class="material-icons">menu</i></button>
+        <button class="close" onclick="slideout.close();"><i class="material-icons">close</i></button>
+    </div>
 
     <main id="panel">
-        <div class="top-navigation">
-            <div class="logo-container">
-                <img src="Branding/harrison-county-mark-01.svg">
-            </div>
-
-            <button class="open" onclick="slideout.open();"><i class="material-icons">menu</i></button>
-            <button class="close" onclick="slideout.close();"><i class="material-icons">close</i></button>
-        </div>
+        
 
 
 
@@ -206,26 +218,7 @@
 
         </div>
 
-        <input class="search-input vivify fadeInRight duration-600" type="text" id="mySearch" onkeyup="myFunction()"
-            placeholder="&emsp; Search Harrison County..." title="Search HCDC"><i
-            class="material-icons search-icon">search</i>
-        <ul id="myMenu" class="teacher-list">
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                    href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                    href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                    href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                    href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
-
-
-        </ul>
-        <script>function myFunction() {
-                var e, s, t;
-                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"
-            }</script>
-        </div>
+     
 
     </main>
 
@@ -244,7 +237,26 @@
         });
     </script>
 
+<input class="search-input vivify fadeInRight duration-600" type="text" id="mySearch" onkeyup="myFunction()"
+placeholder="&emsp; Search Harrison County..." title="Search HCDC"><i
+class="material-icons search-icon">search</i>
+<ul id="myMenu" class="teacher-list">
+<li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+        href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
+<li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+        href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
+<li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+        href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
+<li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+        href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
 
+
+</ul>
+<script>function myFunction() {
+    var e, s, t;
+    for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"
+}</script>
+</button>
 
 
 </body>
