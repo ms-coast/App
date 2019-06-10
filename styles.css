@@ -9,6 +9,8 @@ body {
     src: url(Branding/ALEO-REGULAR-WEBFONT.ttf);
 }
 
+button:focus {outline: none; }
+
 .top-navigation {
     position: fixed;
     width: 100%;
