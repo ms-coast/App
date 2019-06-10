@@ -81,6 +81,12 @@ border: none;
     margin-left: 10px;
 }
 
+.video {margin: auto; width: 94%;border-radius: 10px;}
+
+.video > video {object-fit: cover;height: 200px;;border-radius: 10px;}
+
+video > source {object-fit: cover; height: 200px;}
+
 .sub-swipe {
     overflow-x: scroll;
     white-space: nowrap;
@@ -93,7 +99,8 @@ border: none;
     border-width: 1px;
     border-color: lightgray;
     display: inline-block;
-    margin-left: 10px
+    margin-left: 10px;
+    border-radius: 10px;
 }
 
 .text-wrapper {}
@@ -222,6 +229,6 @@ z-index: 100;;
 
 .frame-container {}
 
-.swipe-container-buttons > a > button {background-color: white; border: none; background-color: #f5f5f5;padding-right: 25px; padding-left: 25px; padding-top: 4px; padding-bottom: 4px; margin-left: 10px;border-radius: 50px;height: 35px;margin-top: -2px;  }
+.swipe-container-buttons > a > button {background-color: white; border: none; background-color: #f5f5f5;padding-right: 25px; padding-left: 25px; padding-top: 4px; padding-bottom: 4px; margin-left: 10px;border-radius: 50px;height: 35px; }
 
 .swipe-container-buttons {overflow-x: scroll; white-space: nowrap;}
