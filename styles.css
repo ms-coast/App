@@ -153,7 +153,7 @@ border: none;
 
 /*-----------------------------Search-------------------------------*/
 
-.search-input {position: fixed;top: 8.5px; margin-left:100px;width: 70%;height: 40px;border-radius: 50px;border:none; background-color: #F5F5F5;text-align: left;padding-left:32px;z-index: 55;;}
+.search-input {position: fixed;top: 8.5px; margin-left:100px;width: 69%;height: 40px;border-radius: 50px;border:none; background-color: #F5F5F5;text-align: left;padding-left:32px;z-index: 55;;}
 
 .search-input:focus {outline: none; }
 
@@ -174,10 +174,12 @@ border: none;
 
 .button-container {margin: auto; width: 230px;}
 
+.menu-button > i {float: left;padding-top: 10px;color: #707070;}
+.menu-button > h3 {float: left;margin-left: 30px;margin-top: 0px;padding-top: 13px;font-weight: normal;}
 
-.menu-button { width: 100%;margin-top: 15px;border: none;text-align: left; }
+.menu-button { width: 100%;margin-top: 15px;border: none;text-align: left;background-color: white; }
 
-.open {position: fixed; left: 5px; top: 4px; background-color: white; border: none; width: 50px;height: 50px;;}
+.open {position: fixed; left: 5px; top: 4px; background-color: white; border: none; width: px;height: 50px;;}
 
 .open > i {font-size: 25px}
 
