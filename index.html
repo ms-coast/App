@@ -12,15 +12,15 @@
     <link rel="manifest" href="/manifest.json">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <link rel="stylesheet" href="vivify.min.css">
-    <script> src="script.js"</script>
+    <script> src = "script.js"</script>
 </head>
 
 <body class=" vivify fadeIn delay-700">
 
 
-<script>setTimeout(function(){
-        document.getElementById('loader').className = 'go';
-    }, 3750);</script>
+    <script>setTimeout(function () {
+            document.getElementById('loader').className = 'go';
+        }, 3750);</script>
 
     <style>
         body {
@@ -69,9 +69,9 @@
     </style>
 
     <nav id="menu">
-     
+
         <div class="button-container">
-<div class="spacer"></div>
+            <div class="spacer"></div>
             <button class="menu-button" onclick="home(),slideout.toggle();"><i class="material-icons">home</i>
                 <h3>Home</h3>
             </button>
@@ -87,8 +87,8 @@
 
     </nav>
     <div class="top-navigation">
-        
-        <div onclick = "home()" class="logo-container">
+
+        <div onclick="home()" class="logo-container">
             <img src="Branding/harrison-county-mark-01.svg">
         </div>
 
@@ -102,23 +102,23 @@
 
 
 
-       <div class="frame-container"> <iframe class="main-frame" name="IFrameName">
-        </iframe></div>
-           
-           
-            <script>
-     document.all.IFrameName.src = 'homescreen.html';
+        <div class="frame-container"> <iframe class="main-frame" name="IFrameName">
+            </iframe></div>
 
-                function home() {
-                    document.all.IFrameName.src = 'homescreen.html';
 
-                }
+        <script>
+            document.all.IFrameName.src = 'homescreen.html';
 
-function news(){
-    document.all.IFrameName.src = 'news.html';
-}
+            function home() {
+                document.all.IFrameName.src = 'homescreen.html';
 
-            </script>
+            }
+
+            function news() {
+                document.all.IFrameName.src = 'news.html';
+            }
+
+        </script>
 
     </main>
 
