@@ -107,11 +107,7 @@ video > source {object-fit: cover; height: 200px;}
 
 .text-wrapper {}
 
-.result-list {position: fixed; left: 0px; top: 50px; z-index: 100;;}
 
-.result-list > li > a {text-decoration: none; }
-
-.result-list > li {list-style-type: none;}
 
 .hero-img {
     width: 100%;
@@ -176,13 +172,21 @@ video > source {object-fit: cover; height: 200px;}
 
 .search-input {height: 40px;border-radius: 50px;border:none; background-color: #F5F5F5;text-align: left;z-index: 55;width: 100%;padding-left: 30px;}
 
-.search-input-container {margin: auto; width: 330px; }
+.search-input-container {margin: auto; width: 330px;background-color:  }
 
 .search-input:focus {outline: none; }
 
 .search-icon { top: 18px;z-index: 56;color:#757575; left:115px; }
 
 .search-input::placeholder {}
+
+.search-wrapper {background-color: white; width: 100%; position: fixed; top: 53px; z-index: 50;padding-bottom: 7px; ;}
+
+.result-list {margin: auto; width: 310px; }
+
+.result-list > li > a {text-decoration: none;color: #1C2857; }
+
+.result-list > li {list-style-type: none; margin-top: 10px;padding: 10px;border-radius: 50px;width: 310px;margin-left: -30px;}
 
 .search-btn {border:none; background-color: white; position: fixed; right: 15px; top:15px; z-index:105; }
 
@@ -192,7 +196,7 @@ video > source {object-fit: cover; height: 200px;}
 .menu-branding {width: 210px;margin-left: 25px}
 
 .menu-branding > h3 {font-size: 20px; font-family: aleo;color: #1C2857}
-.menu-branding > h4 {font-size: 17px; font-family: aleo;margin-top: -15px; color: #1C2857}
+.menu-branding > h4 {font-size: 17px; font-family: aleo;margin-top: -15px; color: #1C2857;font-weight:normal;}
 
 #menu {background-color: white; }
 #panel {border: solid; border-width: 1px; border-color: lightgray; }
