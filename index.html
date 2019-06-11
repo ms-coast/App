@@ -17,7 +17,7 @@
 
 <body class=" vivify fadeIn delay-700">
 
-
+    <button class="search-btn" onclick="search()"><i class="material-icons">search</i></button>
     <script>setTimeout(function () {
             document.getElementById('loader').className = 'go';
         }, 3750);</script>
@@ -69,13 +69,16 @@
     </style>
 
     <nav id="menu">
-<div class="spacer" style="height: 50px;"></div>
+        <div class="spacer" style="height: 50px;"></div>
 
-            <div class="menu-branding"><h3>HARRISON COUNTY </h3><h4>Development Commission </h4></div>
-<div class="divider"></div>
+        <div class="menu-branding">
+            <h3>HARRISON COUNTY </h3>
+            <h4>Development Commission </h4>
+        </div>
+        <div class="divider"></div>
 
-        <div class="button-container" >
-           
+        <div class="button-container">
+
             <button class="menu-button" onclick="home(),slideout.toggle();"><i class="material-icons">home</i>
                 <h3>Home</h3>
             </button>
@@ -86,11 +89,12 @@
 
 
 
-            <button class="menu-button"><i class="material-icons">person</i>
+            <button class="menu-button"><i style="font-size: 27.5px" class="material-icons">
+                person_outline</i>
                 <h3>Account</h3>
             </button>
 
-            
+
             <button class="menu-button"><i class="material-icons">credit_card</i>
                 <h3>Make a Payment</h3>
             </button>
@@ -100,7 +104,8 @@
     <div class="top-navigation">
 
         <div onclick="home()" class="logo-container">
-            <img src="Branding/harrison-county-mark-01.svg">
+            <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
+           
         </div>
 
         <button class="open" onclick="slideout.toggle();"><i class="material-icons">menu</i></button>
@@ -129,6 +134,9 @@
                 document.all.IFrameName.src = 'news.html';
             }
 
+function search(){
+    document.all.IFrameName.src = "search.html"
+}
         </script>
 
     </main>
@@ -148,26 +156,7 @@
         });
     </script>
 
-    <input class="search-input vivify fadeInRight duration-600" type="text" id="mySearch" onkeyup="myFunction()"
-        placeholder="&emsp; Search Harrison County..." title="Search HCDC"><i
-        class="material-icons search-icon">search</i>
-    <ul id="myMenu" class="result-list">
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="Acey, Randee - Special Education">Search Result</a></li>
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="https://www.gulfportschools.org/Domain/2050">Search Result</a></li>
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="https://www.gulfportschools.org/Domain/2051">Search Result</a></li>
-        <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
-                href="https://www.gulfportschools.org/Domain/848">Search Result</a></li>
 
-
-    </ul>
-    <script>function myFunction() {
-            var e, s, t;
-            for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "" : s[t].style.display = "none"
-        }</script>
-    </button>
 
 
 </body>
