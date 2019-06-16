@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="HCDC">
     <link rel="manifest" href="/manifest.json">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
     <link rel="stylesheet" href="vivify.min.css">
     <script> src = "script.js"</script>
 </head>
@@ -68,76 +68,56 @@
         }
     </style>
 
-    <nav id="menu">
-        <div class="spacer" style="height: 50px;"></div>
 
-        <div class="menu-branding">
-            <h3>HARRISON COUNTY </h3>
-            <h4>Development Commission </h4>
-        </div>
-        <div class="divider"></div>
-
-        <div class="button-container">
-
-            <button class="menu-button" onclick="home(),slideout.toggle();"><i class="material-icons">home</i>
-                <h3>Home</h3>
-            </button>
-            <button onclick="news(),slideout.toggle();" onclick="" class="menu-button"><i class="material-icons">
-                    card_giftcard</i>
-                <h3>Coastal Partnership</h3>
-            </button>
-
-
-
-            <button class="menu-button"><i style="font-size: 27.5px" class="material-icons">
-                person_outline</i>
-                <h3>Account</h3>
-            </button>
-
-
-            <button class="menu-button"><i class="material-icons">credit_card</i>
-                <h3>Make a Payment</h3>
-            </button>
-        </div>
-
-    </nav>
     <div class="top-navigation">
 
         <div onclick="home()" class="logo-container">
             <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
-           
+
         </div>
 
-        <button class="open" onclick="slideout.toggle();"><i class="material-icons">menu</i></button>
+      
+
+    </div>
+    <div class="bottom-navigation">
+        <div class="nav-container">
+            <button onclick="home()"><img src="Assets/Home.svg"></button>
+
+            <button><img src="Assets/Payment.svg"></button>
+
+            <button><img src="Assets/Account.svg"></button>
+
+            <button onclick="search()"><img src="Assets/Search.svg"></button>
+
+        </div>
 
     </div>
 
-    <main id="panel">
 
 
 
 
 
-        <div class="frame-container"> <iframe class="main-frame" name="IFrameName">
-            </iframe></div>
+    <div class="frame-container"> <iframe class="main-frame" name="IFrameName">
+        </iframe></div>
 
 
-        <script>
+    <script>
+        document.all.IFrameName.src = 'homescreen.html';
+
+        function home() {
             document.all.IFrameName.src = 'homescreen.html';
 
-            function home() {
-                document.all.IFrameName.src = 'homescreen.html';
+        }
 
-            }
+        function news() {
+            document.all.IFrameName.src = 'news.html';
+        }
 
-            function news() {
-                document.all.IFrameName.src = 'news.html';
-            }
-
-function search(){
-    document.all.IFrameName.src = "search.html"
-}
-        </script>
+        function search() {
+            document.all.IFrameName.src = "search.html"
+        }
+    </script>
 
     </main>
 
