@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="44" viewBox="0 0 80 44">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="56" viewBox="0 0 65 56">
   <defs>
     <clipPath id="clip-Home">
-      <rect width="80" height="44"/>
+      <rect width="65" height="56"/>
     </clipPath>
   </defs>
   <g id="Home" clip-path="url(#clip-Home)">
-    <rect width="80" height="44" fill="#fff"/>
-    <text id="Home-2" data-name="Home" transform="translate(40 38)" fill="#1c2857" font-size="14" font-family="Helvetica"><tspan x="-18.672" y="0">Home</tspan></text>
-    <g id="outline-home-24px" transform="translate(28 3)">
-      <path id="Path_439" data-name="Path 439" d="M0,0H24V24H0Z" fill="none"/>
-      <path id="Path_440" data-name="Path 440" d="M12,5.69l5,4.5V18H15V12H9v6H7V10.19l5-4.5M12,3,2,12H5v8h6V14h2v6h6V12h3Z"/>
+    <rect width="65" height="56" fill="#fff"/>
+    <g id="outline-home-24px" transform="translate(19 9)">
+      <path id="Path_441" data-name="Path 441" d="M0,0H26.438V26.438H0Z" fill="none"/>
+      <path id="Path_442" data-name="Path 442" d="M13.016,5.963l5.508,4.957v8.6h-2.2V12.914H9.711v6.609h-2.2v-8.6l5.508-4.957m0-2.963L2,12.914H5.3v8.813h6.609V15.117h2.2v6.609h6.609V12.914h3.3Z" transform="translate(0.203 0.305)"/>
     </g>
+    <text id="Home-2" data-name="Home" transform="translate(4 37)" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="13.708" y="10">Home</tspan></text>
   </g>
 </svg>

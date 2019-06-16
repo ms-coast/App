@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="56" viewBox="0 0 65 56">
+  <defs>
+    <clipPath id="clip-Payment">
+      <rect width="65" height="56"/>
+    </clipPath>
+  </defs>
+  <g id="Payment" clip-path="url(#clip-Payment)">
+    <rect width="65" height="56" fill="#fff"/>
+    <text id="Payment-2" data-name="Payment" transform="translate(4 36)" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="6.94" y="10">Payment</tspan></text>
+    <g id="outline-credit_card-24px" transform="translate(21 10)">
+      <path id="Path_443" data-name="Path 443" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Path_444" data-name="Path 444" d="M20,4H4A1.985,1.985,0,0,0,2.01,6L2,18a1.993,1.993,0,0,0,2,2H20a1.993,1.993,0,0,0,2-2V6A1.993,1.993,0,0,0,20,4Zm0,14H4V12H20ZM20,8H4V6H20Z"/>
+    </g>
+  </g>
+</svg>
