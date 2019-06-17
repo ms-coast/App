@@ -213,12 +213,13 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .bottom-navigation {
     position: fixed;
-    bottom: 2px;
+    bottom: 0px;
  z-index: 100;
     width: 100%;
     height: 56px;
     background-color: white;
     border-top: solid 1.3px lightgray; 
+
 }
 
 .nav-container {margin: auto;width: 350px;}
