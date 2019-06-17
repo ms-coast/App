@@ -105,6 +105,8 @@ video > source {object-fit: cover; height: 200px;}
     border-radius: 10px;
 }
 
+.sub-swipe > a > p {display: inline-block;margin-left: -100px;padding-right: 16px;}
+
 .swipe-container-buttons {position: sticky; top: 55px;background-color: white;padding-bottom: 5px;}
 
 .text-wrapper {}
