@@ -320,6 +320,8 @@ z-index: 100;;
 .swipe-container-buttons > a > button {background-color: white; border: none; background-color: #f5f5f5;padding-right: 25px; padding-left: 25px; padding-top: 4px; padding-bottom: 4px; margin-left: 10px;border-radius: 50px;height: 35px; }
 
 .swipe-container-buttons {overflow-x: scroll; white-space: nowrap;}
+.sub-frame-container {margin: auto; width: 95%; }
+.sub-frame-container > iframe {border-radius:10px;}
 
 /*-----------------------Snack Bar----------------------------*/
 
