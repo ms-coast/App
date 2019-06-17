@@ -83,7 +83,7 @@ border: none;
     margin-left: 10px;
 }
 
-.video {margin: auto; width: 100%;border-radius: 10px;}
+.video {margin: auto; width: 100%;border-radius: 10px;margin-top: -210px;}
 
 .video > video {object-fit: cover;height: 200px;;border-radius: 0.3px;}
 
@@ -107,7 +107,7 @@ video > source {object-fit: cover; height: 200px;}
 
 .sub-swipe > a > p {display: inline-block;margin-left: -100px;padding-right: 16px;}
 
-.swipe-container-buttons {position: sticky; top: 55px;background-color: white;padding-bottom: 5px;}
+.swipe-container-buttons {position: sticky; top: 35px;background-color: white;padding-bottom: 5px;z-index: 100;}
 
 .text-wrapper {}
 
@@ -151,6 +151,45 @@ video > source {object-fit: cover; height: 200px;}
     margin: auto;
     width: 330px;
 }
+
+
+  .MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .ContentContainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .Content {
+    max-width: 750px;
+    margin: 0 auto;
+   
+  }
+  
+
+  
+  .ParallaxContainer {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+
+
+  }
+
+  
 
 .bottom-navigation {
     position: fixed;
