@@ -105,7 +105,10 @@ video > source {object-fit: cover; height: 200px;}
     border-radius: 10px;
 }
 
+.swipe-container-buttons {position: sticky; top: 55px;background-color: white;padding-bottom: 5px;}
+
 .text-wrapper {}
+
 
 
 
