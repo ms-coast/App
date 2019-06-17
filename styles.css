@@ -51,7 +51,7 @@ button:focus {outline: none; }
 
 .feed {
     position: absolute;
-    top: 100px;
+    top: -50px;
     width: 100%;
     ;
 }
