@@ -12,7 +12,7 @@
     <link rel="manifest" href="/manifest.json">
 
     <link rel="stylesheet" href="vivify.min.css">
-    <script> src = "script.js"</script>
+    <script src = "script.js"> </script>
 </head>
 
 <body class=" vivify fadeIn delay-700">
@@ -37,8 +37,8 @@
     </div>
     <div class="bottom-navigation">
         <div class="nav-container">
-        <button onclick="home()" ><img src="Assets/Home.svg"></button autofocus>
-            <button><img src="Assets/Payment.svg"></button>
+        <button onclick="home()" ><img src="Assets/Home.svg"></button autofocus = "autofocus">
+            <button onclick="warning()"><img src="Assets/Payment.svg"></button>
 
             <button><img src="Assets/Account.svg"></button>
 
@@ -48,7 +48,7 @@
 
     </div>
 
-
+    <div id="snackbar">Account Services Are Currently Unavailable</div>
 
 
 
