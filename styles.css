@@ -205,7 +205,11 @@ video > source {object-fit: cover; height: 200px;}
 
 .nav-container > button > img {margin-left: 5px;width: 65px;}
 
-.nav-container > button {border: none; background-color: white; }
+.nav-container > a > button {border: none; background-color: white; }
+
+.nav-container > a > button > img {margin-left: 5px;width: 65px;}
+
+.nav-container > button {border: none; background-color: white;}
 
 
 /*-----------------------------Search-------------------------------*/
