@@ -163,7 +163,7 @@ video > source {object-fit: cover; height: 200px;}
 
 .nav-container {margin: auto;width: 350px;}
 
-.nav-container > button > img {margin-left: 5px;}
+.nav-container > button > img {margin-left: 5px;width: 65px;}
 
 .nav-container > button {border: none; background-color: white; }
 
