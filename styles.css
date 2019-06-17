@@ -180,7 +180,7 @@ video > source {object-fit: cover; height: 200px;}
 
 .search-input::placeholder {}
 
-.search-wrapper {background-color: white; width: 100%; position: fixed; top: 53px; z-index: 50;padding-bottom: 7px; ;}
+.search-wrapper {background-color: white; width: 100%; position: fixed; top: 55px; z-index: 50;padding-bottom: 7px; ;}
 
 .result-list {margin: auto; width: 310px; }
 
