@@ -3,12 +3,12 @@
     "name": "Harrison County Development Commision",
     "icons": [
         {
-            "src": "Branding/192px%20logo.png",
+            "src": "Branding/192px logo.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "Branding/512px%20logo.png",
+            "src": "branding/512px logo.png",
             "type": "image/png",
             "sizes": "512x512"
         }
