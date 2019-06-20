@@ -284,7 +284,7 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .close > i {font-size: 25px}
 
-.main-frame {position:fixed; top: 0px; width: 100%; height: 100%; border: none;border-radius: 10px;left: 0px; }
+.main-frame { width: 100%; height: 100%; border: none;border-radius: 10px;left: 0px; }
 
 @keyframes donut-spin {
     0% {
