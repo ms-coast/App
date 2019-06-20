@@ -11,6 +11,8 @@ body {
 
 button:focus {outline: none; }
 
+body {}
+
 .top-navigation {
     position: fixed;
     width: 100%;
@@ -51,7 +53,7 @@ button:focus {outline: none; }
 
 .feed {
     position: absolute;
-    top: -50px;
+    top: 100px;
     width: 100%;
     ;
 }
@@ -83,7 +85,7 @@ border: none;
     margin-left: 10px;
 }
 
-.video {margin: auto; width: 100%;border-radius: 10px;margin-top: -215px;}
+.video {margin: auto; width: 100%;border-radius: 10px;margin-top: 30px;}
 
 .video > video {object-fit: cover;height: 200px;;border-radius: 0.3px;}
 
