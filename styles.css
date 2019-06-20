@@ -129,7 +129,7 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .sub-swipe > a > p {display: inline-block;margin-left: -100px;padding-right: 16px;}
 
-.swipe-container-buttons {position: sticky; top: 35px;background-color: white;padding-bottom: 5px;z-index: 100;}
+.swipe-container-buttons {position: sticky; top: 55px;background-color: white;padding-bottom: 5px;z-index: 100;}
 
 .text-wrapper {}
 
