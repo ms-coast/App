@@ -11,7 +11,7 @@ body {
 
 button:focus {outline: none; }
 
-body {}
+body {scroll-behavior: smooth;}
 
 .top-navigation {
     position: fixed;
