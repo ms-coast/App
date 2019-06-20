@@ -226,11 +226,11 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .nav-container {margin: auto;width: 365px;}
 
-.nav-container > button > img {margin-left: 5px;width: 65px;}
+.nav-container > button > img {margin-left: 0px;width: 65px;}
 
 .nav-container > a > button {border: none; background-color: white; }
 
-.nav-container > a > button > img {margin-left: 5px;width: 65px;}
+.nav-container > a > button > img {margin-left: 0px;width: 65px;}
 
 .nav-container > button {border-top: solid;  background-color: white;border-color: transparent; transition: 0.5s ease;border-width: 0px; }
 
