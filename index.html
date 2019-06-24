@@ -21,10 +21,6 @@
     <script>setTimeout(function () {
             document.getElementById('loader').className = 'go';
         }, 3750);</script>
-
-    
-
-
     <div class="top-navigation">
 
         <div onclick="home()" class="logo-container">
@@ -32,10 +28,27 @@
 
         </div>
 
-      
-
     </div>
-    <div class="bottom-nav"><div class="bottom-nav-container"><a href="index.html"><button onclick="this.focus()" style="margin-left: 0px;"><img src="Assets/Home.svg"></button></a></button ><button onclick="this.focus(),search()"><img src="Assets/Search.svg"></button><button autofocus onclick="this.focus(),warning()"><img src="Assets/Payment.svg" onclick="home()"></button><button onclick="this.focus(),warning()"><img  src="Assets/Account.svg"></button></div></div>
+    <div class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="index.html">
+                <button onclick="this.focus()" style="margin-left: 0px;">
+                    <img src="Assets/Home.svg">
+                </button>
+            </a>
+        <button onclick="this.focus(),search()">
+            <img src="Assets/Search.svg">
+        </button>
+        
+        <button autofocus onclick="this.focus(),warning()">
+            <img src="Assets/Payment.svg" onclick="home()">
+        </button>
+        
+        <button onclick="this.focus(),warning()">
+            <img  src="Assets/Account.svg">
+        </button>
+    </div>
+</div>
     
 
     <div id="snackbar">Account Services Are Currently Unavailable</div>
@@ -93,4 +106,4 @@
 
 </body>
 
-</html>c 
+</html>
