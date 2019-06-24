@@ -216,7 +216,7 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .bottom-nav-container {margin: auto; width: 350px;}
 
-.bottom-nav-container > button {display: inline-block;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent;width: 50px; }
+.bottom-nav-container > button {display: inline-block;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent;width: 60px; }
 
 .bottom-nav-container > button:focus {filter: grayscale(0);outline: none;animation: popup 0.7s;}
 
