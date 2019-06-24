@@ -9,6 +9,15 @@ body {
     src: url(Branding/ALEO-REGULAR-WEBFONT.ttf);
 }
 
+html {
+  scrollbar-width: none; /*For Firefox*/
+  -ms-overflow-style: none; /*For IE and Edge*/
+}
+
+html::-webkit-scrollbar {
+  width: 0px; /*For Chrome, Safari and Opera*/
+}
+
 button:focus {outline: none; }
 
 body {scroll-behavior: smooth;}
