@@ -410,9 +410,9 @@ z-index: 100;;
 
   .event-container {border: solid;border-width: 1px; border-color: lightgray;border-radius: 10px;margin-top: 15px;}
 
-  .event-container > .date > h3 {color:black; text-align: center;font-weight: normal;}
+  .event-container > .date > h3 {color:black; text-align: center;font-weight: normal;padding-right: 10px; padding-left: 10px;}
 
-  .event-container > p {text-align: center;margin-top: -10px;padding-bottom: 10px;font-size: 14px;}
+  .event-container > p {text-align: center;margin-top: -10px;padding-bottom: 10px;font-size: 14px;padding-right: 10px;padding-left: 10px;}
 
   .event-container > .date {padding-top: 10px;}
 
