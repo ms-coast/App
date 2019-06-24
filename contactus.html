@@ -19,17 +19,24 @@
     <div id="loading" class="loader-container vivify" id="loader">
         <div class="loader"></div>
     </div>
-<div class="spacer"></div>
+<div class="spacer" style="height: 45px;"></div>
     <div class="form-container">
+<h3>Contact Us</h3>
 
-        <form class="styled-form" action="info@mscoast.org">
+        <form class="styled-form" action="mailto:info@mscoast.org">
 
-            <input placeholder="Name*"  title="Name" required>
-            <input placeholder="E-Mail*" title="E-Mail" required>
+            <input type="text" placeholder="Name*"  title="Name" required>
+            <input type="email" placeholder="E-Mail*" title="E-Mail" required>
+            <input type="text" placeholder="Subject*" title="Subject" required>
             <textarea placeholder="Message*" title="Message" required></textarea>
             <button type="submit">Send</button>
 
         </form>
+        <div class="swipe-wrapper">
+                <div class="swipe-container-buttons" style="margin-top: 0px;"><a href="contactus.html"><button class="vivify fadeIn delay-150">Call Us</button></a><a href="map.html"><button class="vivify fadeIn delay-250">E-Mail Us</button></a><a href="map.html"><button class="vivify fadeIn delay-250">Website</button></a>
+                 
+                </div>
+            </div>
     </div>
 
     <script>window.onload = function () { document.getElementById("loading").style.display = "none" }</script>
