@@ -224,6 +224,12 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .bottom-nav-container > button > img {width: 60px;padding-bottom: 5px; padding-top: 0px; }
 
+.bottom-nav-container > a > button {display: inline-block;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent;width: 60px;margin-left: 14px; }
+
+.bottom-nav-container > a > button:focus {filter: grayscale(0);outline: none;animation: popup 0.7s;}
+
+.bottom-nav-container > a > button > img {width: 60px;padding-bottom: 5px; padding-top: 0px; }
+
 @keyframes popup {
     0%{
       transform: scale(1);
