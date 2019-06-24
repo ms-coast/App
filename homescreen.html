@@ -11,6 +11,8 @@
     <meta name="apple-mobile-web-app-title" content="HCDC">
     <link rel="manifest" href="/manifest.json">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="vivify.min.css">
     <script> src = "script.js"</script>
 </head>
@@ -52,8 +54,8 @@
 
 
         <div class="spacer" style="height: 15px;"></div>
-        <div class="swipe-wrapper">
-            <div class="swipe-container-buttons" style="margin-top: 0px;"><a href="contactus.html"><button
+        <div class="swipe-wrapper" style="border-radius: 50px;">
+            <div class="swipe-container-buttons" style="margin-top: 0px;border-radius: 100px;"><a href="contactus.html"><button
                         class="vivify fadeIn delay-150">Contact Us</button></a><a href="map.html"><button
                         class="vivify fadeIn delay-250">Find Us</button></a><a href=""><button
                         class="vivify fadeIn delay-350">Make A Payment</button></a><a href=""><button
@@ -87,21 +89,21 @@
 
         </div>
         <div class="event-wrapper">
-            <div class="event-container">
+            <div class="event-container" data-aos ="zoom-in">
                 <div class="date">
                     <h3>Board of Commissioners Meeting</h3>
                 </div>
                 <p>July 16th 8:15am</p>
             </div>
 
-            <div class="event-container">
+            <div class="event-container" data-aos ="zoom-in">
                 <div class="date">
                     <h3>State of the County Address</h3>
                 </div>
                 <p>August 22nd 7:30am</p>
             </div>
 
-            <div class="event-container">
+            <div class="event-container" data-aos ="zoom-in">
                 <div class="date">
                     <h3>Coastal Region Transportation Summit & Statewide Joint Land Use Forum</h3>
                 </div>
@@ -123,20 +125,11 @@
 
     </main>
 
-    <script src="dist/slideout.min.js"></script>
     <script>
-        var slideout = new Slideout({
-            'panel': document.getElementById('panel'),
-            'menu': document.getElementById('menu'),
-            'padding': 256,
-            'tolerance': 70
-        });
+            AOS.init();
+          </script>
 
-        // Toggle button
-        document.querySelector('.toggle-button').addEventListener('click', function () {
-            slideout.toggle();
-        });
-    </script>
+ 
 
     </div>
     </div>
