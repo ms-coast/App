@@ -212,6 +212,28 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
   }
 
   
+.bottom-nav {position: fixed; left: 0px; bottom: -5px;z-index: 100;background-color: white;width: 100%;padding-top: 0px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2); }
+
+.bottom-nav-container {margin: auto; width: 350px;}
+
+.bottom-nav-container > button {display: inline-block;width: 65px;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent }
+
+.bottom-nav-container > button:focus {filter: grayscale(0);outline: none;animation: popup 0.7s;}
+
+
+
+@keyframes popup {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+  
+    100%{
+      transform: scale(1);
+    }
+  }
 
 .bottom-navigation {
     position: fixed;
@@ -324,6 +346,8 @@ z-index: 100;;
 .swipe-container-buttons {overflow-x: scroll; white-space: nowrap;}
 .sub-frame-container {margin: auto; width: 95%; }
 .sub-frame-container > iframe {border-radius:10px;}
+
+.swipe-wrapper {margin: auto; width: 350px; }
 
 /*-----------------------Snack Bar----------------------------*/
 
