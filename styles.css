@@ -214,13 +214,13 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
   
 .bottom-nav {position: fixed; left: 0px; bottom: -5px;z-index: 100;background-color: white;width: 100%;padding-top: 0px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2); }
 
-.bottom-nav-container {margin: auto; width: 350px;}
+.bottom-nav-container {margin: auto; width: 313px;}
 
-.bottom-nav-container > button {display: inline-block;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent;width: 60px; }
+.bottom-nav-container > button {display: inline-block;filter: grayscale(100);;border: none;transition: 0.5s ease;background-color: transparent;width: 60px;margin-left: 14px; }
 
 .bottom-nav-container > button:focus {filter: grayscale(0);outline: none;animation: popup 0.7s;}
 
-.bottom-nav-container > button > img {width: 60px;}
+.bottom-nav-container > button > img {width: 60px;padding-bottom: 5px; padding-top: 5px; }
 
 @keyframes popup {
     0%{
