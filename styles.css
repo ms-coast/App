@@ -43,7 +43,7 @@ body {scroll-behavior: smooth;}
 
 
 .livefeed > iframe {
-    width: 100%;
+    width: 100%;+
     height: 200px;
 }
 
@@ -127,8 +127,8 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 }
 
 .sub-swipe > a > img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border: solid;
     border-width: 1px;
     border-color: lightgray;
@@ -239,6 +239,11 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 
 .bottom-nav-container > a > button > img {width: 60px;padding-bottom: 5px; padding-top: 0px; }
 
+
+@media only screen and (min-height: 811px) {
+.bottom-nav {bottom: 0px;padding-bottom: 15px; }
+}
+
 @keyframes popup {
     0%{
       transform: scale(1);
@@ -252,6 +257,8 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
     }
   }
 
+  
+
 .bottom-navigation {
     position: fixed;
     bottom: 0px;
@@ -262,6 +269,7 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
     border-top: solid 1.3px lightgray; 
 
 }
+
 
 .nav-container {margin: auto;width: 330px;}
 
