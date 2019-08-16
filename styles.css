@@ -240,9 +240,7 @@ word-break: break-all;padding-top: 10px;padding-bottom: 10px;}
 .bottom-nav-container > a > button > img {width: 60px;padding-bottom: 5px; padding-top: 0px; }
 
 
-@media only screen and (min-height: 770px) {
-.bottom-nav {bottom: 0px;padding-bottom: 15px; }
-}
+
 
 @keyframes popup {
     0%{
@@ -366,7 +364,7 @@ z-index: 100;;
 
 .frame-container {-webkit-overflow-scrolling: touch;}
 
-.swipe-container-buttons > a > button {background-color: white; background-color: #f5f5f5;padding-right: 25px; padding-left: 25px; padding-top: 4px; padding-bottom: 4px; margin-left: 10px;border-radius: 50px;height: 35px;border: none; }
+.swipe-container-buttons > a > button {background-color: white;padding-right: 25px; padding-left: 25px; padding-top: 4px; padding-bottom: 4px; margin-left: 10px;border-radius: 50px;height: 35px;border: solid; border-width: 1px; border-color: lightgray; }
 
 .swipe-container-buttons {overflow-x: scroll; white-space: nowrap;}
 .sub-frame-container {margin: auto; width: 95%; }
