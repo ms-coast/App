@@ -10,23 +10,28 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="HCDC">
     <link rel="manifest" href="/manifest.json">
-<link rel="shortcut-icon" href="branding/512px logo.png">
+    <link rel="shortcut-icon" href="branding/512px logo.png">
     <link rel="stylesheet" href="vivify.min.css">
     <link rel="manifest" href="/manifest.json">
-    <script src = "script.js"> </script>
+    <script src="script.js"> </script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
 </head>
 
 <body class="vivify fadeIn delay-700">
-   
-<script>
 
-</script>
-<script>import Darkmode from 'darkmode-js';
+    <script>
 
-new Darkmode().showWidget();</script>
-    <script>setTimeout(function () {
+    </script>
+    <script>
+        import Darkmode from 'darkmode-js';
+
+        new Darkmode().showWidget();
+    </script>
+    <script>
+        setTimeout(function () {
             document.getElementById('loader').className = 'go';
-        }, 3750);</script>
+        }, 3750);
+    </script>
     <div class="top-navigation">
 
         <div onclick="home()" class="logo-container">
@@ -37,56 +42,125 @@ new Darkmode().showWidget();</script>
     </div>
     <div class="bottom-nav">
         <div class="bottom-nav-container">
-            <a href="index.html">
-                <button onclick="this.focus()" style="margin-left: 0px;">
+            <a href="#home">
+                <button>
                     <img src="Assets/Home.svg">
                 </button>
             </a>
-        <button onclick="this.focus(),search()">
-            <img src="Assets/Search.svg">
-        </button>
-        
-        <button autofocus onclick="this.focus(),warning()">
-            <img src="Assets/Payment.svg">
-        </button>
-        
-        <button onclick="this.focus(),warning()">
-            <img  src="Assets/Account.svg">
-        </button>
+            <a href="">
+                <button>
+                    <img src="Assets/Search.svg">
+                </button>
+            </a>
+            <a href="#qpay">
+<button>
+                <img src="Assets/Payment.svg">
+            </button>
+            </a>
+            <a href="#account">
+                <button>
+                    <img src="Assets/Account.svg">
+                </button>
+            </a>
+        </div>
     </div>
-</div>
-    
+
 
     <div id="snackbar">Account Services Are Currently Unavailable</div>
 
 
+    <section>
 
 
-    <div class="frame-container"> <iframe class="main-frame" name="IFrameName">
-        </iframe></div>
+
+        <div class="feed">
+            <div class="feed-text-container">
+                <div class="text-wrapper">
+                    <h3>Harrison County</h3>
+                    <h4>Development Commission</h4>
+                </div>
 
 
-    <script>
-        
-        document.all.IFrameName.src = 'homescreen.html';
+            </div>
 
-        function home() {
-            document.all.IFrameName.src = 'homescreen.html';
 
-        }
+        </div>
 
-        function news() {
-            document.all.IFrameName.src = 'news.html';
-        }
 
-        function search() {
-            document.all.IFrameName.src = "search.html"
-        }
 
-        function payment(){
-            document.all.IFrameName.src = "payment.html"
-        }
-    </script>
+        <div class="video"><video loop autoplay muted class="hero-img" playsinline>
+                <source src="video/HarrisonCoLighthouse_medium.mp4"><img>
+            </video></div>
+
+
+
+
+
+        <div class="homescreen" id="home">
+
+            <div class="spacer" style="height: 15px;"></div>
+            <div class="swipe-wrapper" style="border-radius: 50px;">
+                <div class="swipe-container-buttons" style="margin-top: 0px;border-radius: 100px;"><a
+                        href="contactus.html"><button style="margin-left: 0px;" class="vivify fadeIn delay-150">Contact
+                            Us</button></a><a href="map.html"><button class="vivify fadeIn delay-250">Find
+                            Us</button></a><a href=""><button class="vivify fadeIn delay-350">Make A
+                            Payment</button></a><a href=""><button class="vivify fadeIn delay-450">View
+                            Bill</button></a>
+                </div>
+            </div>
+
+
+            <div class="swipe-container">
+
+            </div>
+
+            <div class="swipe-container">
+                <h3>Events</h3>
+
+            </div>
+            <div class="event-wrapper">
+                <div class="event-container" data-aos="zoom-in">
+                    <div class="date">
+                        <h3>Board of Commissioners Meeting</h3>
+                    </div>
+                    <p>Tuesday, September 17, 2019 8:15AM</p>
+                </div>
+
+                <div class="event-container" data-aos="zoom-in">
+                    <div class="date">
+                        <h3>3rd Annual State of the County Economy Symposium</h3>
+                    </div>
+                    <p>Wednesday, November 20, 2019 8:00AM</p>
+                </div>
+
+            
+            </div>
+
+
+            <div class="spacer" style="height: 70px;"></div>
+
+        </div>
+
+
+        <script>
+            AOS.init();
+        </script>
+
+
+
+
+
+    </section>
+
+    <section id="account" class="account">
+        <iframe style="position: fixed; left: 0px; top: -200px;" is="x-frame-bypass"
+            src="https://mscoast.azurewebsites.net"></iframe>
+    </section>
+
+    <section id="qpay" class="account">
+        <iframe style="position: fixed; left: 0px; top: -200px;" is="x-frame-bypass"
+            src="https://mscoast.azurewebsites.net/Payment/LookupAccount"></iframe>
+    </section>
 
     </main>
 
