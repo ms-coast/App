@@ -21,9 +21,13 @@ html::-webkit-scrollbar {
   /*For Chrome, Safari and Opera*/
 }
 
+a:active {outline: none; }
+
 button:focus {
   outline: none;
 }
+
+.refresh-btn {position: fixed; right: 10px; top: 5px; color:black; padding: 10px; }
 
 body {
   scroll-behavior: smooth;
@@ -349,15 +353,10 @@ textarea:focus {
   border: none;
   transition: 0.5s ease;
   background-color: transparent;
-  width: 60px;
-  margin-left: 14px;
+
+padding-left:10px;
 }
 
-.bottom-nav-container>button:focus {
-  filter: grayscale(0);
-  outline: none;
-  animation: popup 0.7s;
-}
 
 .bottom-nav-container>button>img {
   width: 60px;
@@ -372,15 +371,11 @@ textarea:focus {
   border: none;
   transition: 0.5s ease;
   background-color: transparent;
-  width: 60px;
-  margin-left: 14px;
+
+padding-left: 10px;padding-right: 10px;
 }
 
-.bottom-nav-container>a>button:focus {
-  filter: grayscale(0);
-  outline: none;
-  animation: popup 0.7s;
-}
+
 
 .bottom-nav-container>a>button>img {
   width: 60px;

@@ -15,6 +15,10 @@
     <link rel="manifest" href="/manifest.json">
     <script src="script.js"> </script>
     <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body class="vivify fadeIn delay-700">
@@ -39,26 +43,31 @@
 
         </div>
 
+        <a class="refresh-btn waves-effect" style="position: fixed; right: 6px; border-radius: 50px; "
+            href="index.html">
+            <i class="material-icons ">refresh</i>
+        </a>
+
     </div>
     <div class="bottom-nav">
         <div class="bottom-nav-container">
             <a href="#home">
-                <button>
-                    <img src="Assets/Home.svg">
+                <button class="waves-effect">
+                    <img  src="Assets/Home.svg">
                 </button>
             </a>
             <a href="">
-                <button>
-                    <img src="Assets/Search.svg">
+                <button class="waves-effect">
+                    <img  src="Assets/Search.svg">
                 </button>
             </a>
             <a href="#qpay">
-<button>
-                <img src="Assets/Payment.svg">
-            </button>
+                <button class="waves-effect">
+                    <img src="Assets/Payment.svg">
+                </button>
             </a>
             <a href="#account">
-                <button>
+                <button class="waves-effect">
                     <img src="Assets/Account.svg">
                 </button>
             </a>
@@ -101,10 +110,11 @@
             <div class="spacer" style="height: 15px;"></div>
             <div class="swipe-wrapper" style="border-radius: 50px;">
                 <div class="swipe-container-buttons" style="margin-top: 0px;border-radius: 100px;"><a
-                        href="contactus.html"><button style="margin-left: 0px;" class="vivify fadeIn delay-150">Contact
-                            Us</button></a><a href="map.html"><button class="vivify fadeIn delay-250">Find
-                            Us</button></a><a href=""><button class="vivify fadeIn delay-350">Make A
-                            Payment</button></a><a href=""><button class="vivify fadeIn delay-450">View
+                        href="contactus.html"><button style="margin-left: 0px;"
+                            class="vivify fadeIn delay-150 waves-effect">Contact
+                            Us</button></a><a href="map.html"><button class="vivify fadeIn delay-250 waves-effect">Find
+                            Us</button></a><a href=""><button class="vivify fadeIn delay-350 waves-effect">Make A
+                            Payment</button></a><a href=""><button class="vivify fadeIn delay-450 waves-effect">View
                             Bill</button></a>
                 </div>
             </div>
@@ -118,8 +128,15 @@
                 <h3>Events</h3>
 
             </div>
+
+            <style>
+                .date>h3 {
+                    text-align: center;
+                    font-size: 17px;
+                }
+            </style>
             <div class="event-wrapper">
-                <div class="event-container" data-aos="zoom-in">
+                <div class="event-container waves-effect" style="width: 100%;" data-aos="zoom-in">
                     <div class="date">
                         <h3>Board of Commissioners Meeting</h3>
                     </div>
@@ -133,7 +150,7 @@
                     <p>Wednesday, November 20, 2019 8:00AM</p>
                 </div>
 
-            
+
             </div>
 
 
