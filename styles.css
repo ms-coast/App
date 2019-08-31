@@ -824,10 +824,13 @@ width:100%;
 #account {
   display:none;
   background-color: white; height: 100vh;
+  
 }
 
 #account:target {
   display: block;
+  position: relative;
+  z-index: 15;
 }
 
 #qpay {display:none}
