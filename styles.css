@@ -83,7 +83,7 @@ body {
   position: absolute;
   top: 100px;
   width: 100%;
-  ;
+  ;z-index:10;
 }
 
 .action-button>a>button {
@@ -130,11 +130,13 @@ body {
   height: 200px;
   ;
   border-radius: 0.3px;
+ 
 }
 
 video>source {
   object-fit: cover;
   height: 200px;
+
 }
 
 
@@ -450,6 +452,10 @@ padding-left: 10px;padding-right: 10px;
 
 /*-----------------------------Search-------------------------------*/
 
+.search {position:fixed; left:0px; top: 0px; background-color: white; z-index: 15}
+
+
+
 .search-input {
   height: 40px;
   border-radius: 50px;
@@ -491,8 +497,7 @@ padding-left: 10px;padding-right: 10px;
 }
 
 .result-list {
-  margin: auto;
-  width: 310px;
+width: 100%; 
 }
 
 .result-list>li>a {
@@ -506,7 +511,8 @@ padding-left: 10px;padding-right: 10px;
   padding: 10px;
   border-radius: 50px;
   width: 310px;
-  margin-left: -30px;
+  margin-left: 20px;
+  width: 100%; 
 }
 
 .search-btn {
@@ -694,8 +700,7 @@ padding-left: 10px;padding-right: 10px;
 }
 
 .swipe-wrapper {
-  margin: auto;
-  width: 350px;
+width:100%;
 }
 
 /*-----------------------Snack Bar----------------------------*/
@@ -809,6 +814,7 @@ padding-left: 10px;padding-right: 10px;
 .event-wrapper {
   margin: auto;
   width: 94.5%;
+  margin-top: -15px;
 }
 
 /*---------------------------------------Section Styling---------------------------------*/
@@ -828,7 +834,9 @@ padding-left: 10px;padding-right: 10px;
 
 #home:target {z-index: 150}
 
+#search {display: none; }
 
+#search:target {display: block ;}
 /*-----------------------------------Account Styling--------------------------------------*/
 
 
