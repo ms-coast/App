@@ -817,6 +817,8 @@ width:100%;
   margin-top: -15px;
 }
 
+
+
 /*---------------------------------------Section Styling---------------------------------*/
 
 #account {
@@ -844,10 +846,11 @@ width:100%;
 .account>iframe {
   position: fixed;
   width: 100%;
-  height:150%;;
+  height:160%;;
   left: 0px; top: -400px;
   z-index: 10;
   background-color: white; 
   border:none;
+
   ;
 }
