@@ -859,3 +859,11 @@ width:100%;
 
   ;
 }
+
+/*---------------------------------------Media Queries---------------------------------------------*/
+
+@media only screen and (min-width:500px) {
+ .video > video {height: 300px;}
+
+ .feed {top: 150px;}
+}
