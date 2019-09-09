@@ -820,7 +820,7 @@ width:100%;
 
 #qpay {display:none}
 
-#qpay:target {display: block;}
+#qpay:target {display: block;position: relative; z-index: 30;}
 
 #home:target {z-index: 150}
 
