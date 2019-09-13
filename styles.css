@@ -73,6 +73,14 @@ body {
   ;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .action-button {
   margin: auto;
   width: 340px;
