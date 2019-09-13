@@ -1,27 +1,6 @@
 <html>
 
 <head>
-    <title>HCDC App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-title" content="HCDC">
-    <link rel="manifest" href="/manifest.json">
-
-    <link rel="stylesheet" href="vivify.min.css">
-    <script> src = "script.js"</script>
-</head>
-
-<body class="vivify fadeIn delay-500">
-    <div id="loading" class="loader-container vivify" id="loader">
-        <div class="loader"></div>
-    </div>
-<html>
-
-<head>
   <title>HCDC App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
   <link rel="stylesheet" href="styles.css">
@@ -31,21 +10,76 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="apple-mobile-web-app-title" content="HCDC">
   <link rel="manifest" href="/manifest.json">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
   <link rel="stylesheet" href="vivify.min.css">
-  <script> src = "script.js"</script>
+  <script>
+    src = "script.js"
+  </script>
 </head>
 
 <body class="vivify fadeIn delay-500">
   <div id="loading" class="loader-container vivify" id="loader">
     <div class="loader"></div>
   </div>
+  <html>
 
-  <div class="spacer"></div>
+  <head>
+    <title>HCDC App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="HCDC">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <link rel="stylesheet" href="vivify.min.css">
+    <script>
+      src = "script.js"
+    </script>
+  </head>
 
-  <div><div id="embedmap-display" ><iframe class="main-frame"style="position:absolute;height:85%;width:100%;border:0;top: 50px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=12281+Intraplex+Parkway&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embedmap-code" href="https://changing.hosting" id="getdata-formap">Changing Hosting</a><style>#embedmap-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+  <body class="vivify fadeIn delay-500">
+    <div id="loading" class="loader-container vivify" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div class="top-navigation">
 
-  <script>window.onload = function(){ document.getElementById("loading").style.display = "none" }</script>
-</body>
+      <div onclick="home()" class="logo-container">
+        <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
 
-</html>
+      </div>
+
+      <a class="refresh-btn waves-effect" style="position: fixed; left: 6px; border-radius: 50px; " href="index.html">
+        <i class="material-icons waves-effect">arrow_back</i>
+      </a>
+
+      <p class="page-indicator">Find Us</p>
+
+    </div>
+    <div class="spacer"></div>
+
+    <div>
+      <div id="embedmap-display"><iframe class="main-frame"
+          style="position:absolute;height:100vh;width:100%;border:0;top: 0px;" frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=12281+Intraplex+Parkway&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+      </div>
+      <style>
+        #embedmap-display img {
+          max-width: none !important;
+          background: none !important;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      </style>
+    </div>
+
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none"
+      }
+    </script>
+  </body>
+
+  </html>
