@@ -1,47 +1,205 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>GHS App</title>
-    <script>
-        setTimeout(function(){
-            window.location.href="https://gulfporthighschoolapp.netlify.com/homescreen.html/#homescreen"; 
-        }, 0); 
-    </script>
-    <link rel="stylesheet" href="main.css">
+    <title>HCDC App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="css/vivify.min.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="vivify.min.css" rel="stylesheet" type="text/css" />
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-title" content="GHS App">
-    <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <meta name="apple-mobile-web-app-title" content="HCDC">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut-icon" href="branding/512px logo.png">
+    <link rel="stylesheet" href="vivify.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <script src="script.js"> </script>
     <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body class="vivify fadeIn delay-700">
+
+    <script>
+
     </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
-                var template = Handlebars.compile($('#item-template').html())
-                $('#items').html(template(data))
-            })
-        })
+    <script>
+        import Darkmode from 'darkmode-js';
+
+        new Darkmode().showWidget();
     </script>
-     
-   
+    <script>
+        setTimeout(function () {
+            document.getElementById('loader').className = 'go';
+        }, 3750);
+    </script>
+    <div class="top-navigation">
+
+        <div onclick="home()" class="logo-container">
+            <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
+
+        </div>
+
+        <a class="refresh-btn waves-effect" style="position: fixed; right: 6px; border-radius: 50px; "
+            href="index.html">
+            <i class="material-icons ">refresh</i>
+        </a>
+
+    </div>
+    <div class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="#home">
+                <button class="waves-effect">
+                    <img src="Assets/Home.svg">
+                </button>
+            </a>
+            <a href="#search">
+                <button class="waves-effect">
+                    <img src="Assets/Search.svg">
+                </button>
+            </a>
+            <a href="#qpay">
+                <button class="waves-effect">
+                    <img src="Assets/Payment.svg">
+                </button>
+            </a>
+            <a href="#account">
+                <button class="waves-effect">
+                    <img src="Assets/Account.svg">
+                </button>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="snackbar">Account Services Are Currently Unavailable</div>
+
+
+    <section>
+
+
+
+        <div class="feed">
+            <div class="feed-text-container">
+                <div class="text-wrapper">
+                    <h3 style="font-weight: bold;font-size: 20px;">HARRISON COUNTY</h3>
+                    <h4 style="font-size: 17px;margin-top:-15px;">Development Commission</h4>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="banner"><img src="images/Banner.png"></div>
+
+
+
+
+
+        <div class="homescreen" id="home">
+
+            <div class="spacer" style="height: 15px;"></div>
+            <div class="swipe-wrapper" style="border-radius: 50px;">
+                <div class="swipe-container-buttons" style="margin-top: 0px;border-radius: 100px;"><a
+                        href="contactus.html"><button style="margin-left: 8px;"
+                            class="vivify fadeIn delay-150 waves-effect">Contact
+                            Us</button></a><a href="map.html"><button class="vivify fadeIn delay-250 waves-effect">Find
+                            Us</button></a><a href="aboutus.html"><button class="vivify fadeIn delay-450 waves-effect">About
+                            Us</button></a>
+                </div>
+            </div>
+
+            <div class="search" id="search">
+                <iframe src="https://hcdcapp.netlify.com/search.html"></iframe>
+            </div>
+
+
+
+            <div class="swipe-container">
+                <h3 style="margin-top:20px;">Events</h3>
+
+            </div>
+
+            <style>
+                .date>h3 {
+                    text-align: center;
+                    font-size: 17px;
+                }
+            </style>
+            <div class="event-wrapper">
+                <div class="event-container waves-effect" style="width: 100%;" data-aos="zoom-in">
+                    <div class="date">
+                        <h3>Board of Commissioners Meeting</h3>
+                    </div>
+                    <p>Tuesday, September 17, 2019 8:15AM</p>
+                </div>
+
+                <div class="event-container waves-effect" data-aos="zoom-in" style="width: 100%;">
+                    <div class="date">
+                        <h3>3rd Annual State of the County Economy Symposium</h3>
+                    </div>
+                    <p>Wednesday, November 20, 2019 8:00AM</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="spacer" style="height: 70px;"></div>
+
+        </div>
+
+
+        <script>
+            AOS.init();
+        </script>
+
+
+
+
+
+    </section>
+
+    <section id="account" class="account vivify fadeIn duration-250">
+        <iframe style="position: fixed; left: 0px; top: -200px;z-index: 150;background-color:white; width:100%; "
+            is="x-frame-bypass" src="https://mscoast.azurewebsites.net/Payment/LookupAccount"></iframe>
+    </section>
+
+    <section id="qpay" class="account vivify fadeIn duration-250">
+        <iframe style="position: fixed; left: 0px; top: -190px;z-index: 150; background-color:white; width:100%; "
+            is="x-frame-bypass" src="https://mscoast.azurewebsites.net"></iframe>
+    </section>
+
+
+    </main>
+
+    <script src="dist/slideout.min.js"></script>
+    <script>
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 256,
+            'tolerance': 70
+        });
+
+
+
+        // Toggle button
+        document.querySelector('.toggle-button').addEventListener('click', function () {
+            slideout.toggle();
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>
