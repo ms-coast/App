@@ -27,7 +27,7 @@ button:focus {
   outline: none;
 }
 
-.refresh-btn {position: fixed; right: 10px; top: 5px; color:black; padding: 10px; }
+.refresh-btn {position: fixed; right: 10px; top: 5px; color:black; padding: 10px;width: 45px; }
 
 body {
   scroll-behavior: smooth;
@@ -130,7 +130,7 @@ a {
 
 .banner {margin-top: 55px;}
 
-.page-indicator {margin-left: 55px;margin-top: 19px;font-weight: bold;font-size: 17px;}
+.page-indicator {margin-left: 55px;margin-top: 16px;font-weight: bold;font-size: 17px;}
 
 .styled-form>input {
   width: 100%;
