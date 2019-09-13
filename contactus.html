@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="HCDC">
     <link rel="manifest" href="/manifest.json">
-
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
     <link rel="stylesheet" href="vivify.min.css">
     <script> src = "script.js"</script>
 </head>
@@ -20,24 +20,23 @@
         <div class="loader"></div>
     </div>
 <div class="spacer" style="height: 45px;"></div>
-    <div class="form-container">
-<h3>Contact Us</h3>
+<div class="top-navigation">
 
-        <form class="styled-form" action="mailto:info@mscoast.org">
+    <div onclick="home()" class="logo-container">
+        <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
 
-            <input type="text" placeholder="Name*"  title="Name" required>
-            <input type="email" placeholder="E-Mail*" title="E-Mail" required>
-            <input type="text" placeholder="Subject*" title="Subject" required>
-            <textarea placeholder="Message*" title="Message" required></textarea>
-            <button type="submit">Send</button>
-
-        </form>
-        <div class="swipe-wrapper">
-                <div class="swipe-container-buttons" style="margin-top: 0px;"><a href="tel:+12288965020"><button class="vivify fadeIn delay-150">Call Us</button></a><a href="mailto:info@mscoast.org"><button class="vivify fadeIn delay-250">E-Mail Us</button></a>
-                 
-                </div>
-            </div>
     </div>
+
+    <a class="refresh-btn waves-effect" style="position: fixed; left: 6px; border-radius: 50px; "
+        href="index.html">
+        <i class="material-icons waves-effect" >arrow_back</i>
+    </a>
+
+    <p class="page-indicator">Contact Us</p>
+
+</div>
+
+<div class="content-iframe"><iframe is='x-frame-bypass' src="https://www.mscoast.org/contact-us"></iframe></div>
 
     <script>window.onload = function () { document.getElementById("loading").style.display = "none" }</script>
 </body>
