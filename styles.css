@@ -21,13 +21,22 @@ html::-webkit-scrollbar {
   /*For Chrome, Safari and Opera*/
 }
 
-a:active {outline: none; }
+a:active {
+  outline: none;
+}
 
 button:focus {
   outline: none;
 }
 
-.refresh-btn {position: fixed; right: 10px; top: 5px; color:black; padding: 10px;width: 45px; }
+.refresh-btn {
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  color: black;
+  padding: 10px;
+  width: 45px;
+}
 
 body {
   scroll-behavior: smooth;
@@ -78,7 +87,7 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .action-button {
@@ -91,7 +100,8 @@ a {
   position: absolute;
   top: 100px;
   width: 100%;
-  ;z-index:10;
+  ;
+  z-index: 10;
 }
 
 .action-button>a>button {
@@ -126,11 +136,22 @@ a {
   margin-left: 10px;
 }
 
-.banner > img {width: 100%; height: 200px; object-fit:cover;}
+.banner>img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-.banner {margin-top: 55px;}
+.banner {
+  margin-top: 55px;
+}
 
-.page-indicator {margin-left: 55px;margin-top: 16px;font-weight: bold;font-size: 17px;}
+.page-indicator {
+  margin-left: 55px;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 17px;
+}
 
 .styled-form>input {
   width: 100%;
@@ -340,6 +361,10 @@ textarea:focus {
   width: 350px;
 }
 
+.filterDiv {display: none;}
+
+.show {display: block}
+
 .bottom-nav-container>button {
   display: inline-block;
   filter: grayscale(100);
@@ -348,7 +373,7 @@ textarea:focus {
   transition: 0.5s ease;
   background-color: transparent;
 
-padding-left:10px;
+  padding-left: 10px;
 }
 
 
@@ -366,7 +391,8 @@ padding-left:10px;
   transition: 0.5s ease;
   background-color: transparent;
 
-padding-left: 10px;padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -444,7 +470,13 @@ padding-left: 10px;padding-right: 10px;
 
 /*-----------------------------Search-------------------------------*/
 
-.search {position:fixed; left:0px; top: 0px; background-color: white; z-index: 15}
+.search {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: white;
+  z-index: 15
+}
 
 
 
@@ -469,6 +501,8 @@ padding-left: 10px;padding-right: 10px;
   outline: none;
 }
 
+.show {display: block}
+
 .search-icon {
   top: 18px;
   z-index: 56;
@@ -476,7 +510,14 @@ padding-left: 10px;padding-right: 10px;
   left: 115px;
 }
 
-#search > iframe {border:none; position: fixed; left:0px; width: 100%; height: 100%;background-color: white;}
+#search>iframe {
+  border: none;
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
 
 .search-input::placeholder {}
 
@@ -491,7 +532,7 @@ padding-left: 10px;padding-right: 10px;
 }
 
 .result-list {
-width: 100%; 
+  width: 100%;
 }
 
 .result-list>li>a {
@@ -506,7 +547,8 @@ width: 100%;
   border-radius: 50px;
 
   margin-left: 20px;
-  width: 100%; 
+  width: 100%;
+  display: none;
 }
 
 .search-btn {
@@ -694,7 +736,7 @@ width: 100%;
 }
 
 .swipe-wrapper {
-width:100%;
+  width: 100%;
 }
 
 /*-----------------------Snack Bar----------------------------*/
@@ -816,9 +858,10 @@ width:100%;
 /*---------------------------------------Section Styling---------------------------------*/
 
 #account {
-  display:none;
-  background-color: white; height: 100vh;
-  
+  display: none;
+  background-color: white;
+  height: 100vh;
+
 }
 
 #account:target {
@@ -827,17 +870,37 @@ width:100%;
   z-index: 15;
 }
 
-#qpay {display:none}
+#qpay {
+  display: none
+}
 
-#qpay:target {display: block;position: relative; z-index: 30;}
+#qpay:target {
+  display: block;
+  position: relative;
+  z-index: 30;
+}
 
-#home:target {z-index: 150}
+#home:target {
+  z-index: 150
+}
 
-#search {display: none; }
+#search {
+  display: none;
+}
 
-#search:target {display: block ;}
+#search:target {
+  display: block;
+}
 
-.content-iframe > iframe{position: fixed;width: 100%; height: 100%; top: 0px; left: 0px;border: none;margin-top: -75px;}
+.content-iframe>iframe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border: none;
+  margin-top: -75px;
+}
 
 
 /*-----------------------------------Account Styling--------------------------------------*/
@@ -845,13 +908,15 @@ width:100%;
 
 
 .account>iframe {
-  position: fixed;z
-  width: 100%;
-  height:160%;;
-  left: 0px; top: -400px;
+  position: fixed;
+  z width: 100%;
+  height: 160%;
+  ;
+  left: 0px;
+  top: -400px;
   z-index: 10;
-  background-color: white; 
-  border:none;
+  background-color: white;
+  border: none;
 
   ;
 }
@@ -859,11 +924,20 @@ width:100%;
 /*---------------------------------------Media Queries---------------------------------------------*/
 
 @media only screen and (min-width:500px) {
- .video > video {height: 360px;}
+  .video>video {
+    height: 360px;
+  }
 
- .feed {top: 180px;}
+  .feed {
+    top: 180px;
+  }
 
- .swipe-container-buttons {margin: auto; width: 360px;}
+  .swipe-container-buttons {
+    margin: auto;
+    width: 360px;
+  }
 
- .banner > img {height: 360px;}
+  .banner>img {
+    height: 360px;
+  }
 }
