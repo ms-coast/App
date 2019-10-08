@@ -358,7 +358,7 @@ textarea:focus {
 
 .bottom-nav-container {
   margin: auto;
-  width: 350px;
+  width:300px;
 }
 
 .filterDiv {display: none;}
@@ -373,7 +373,8 @@ textarea:focus {
   transition: 0.5s ease;
   background-color: transparent;
 
-  padding-left: 10px;
+  padding-left: 30px;
+  margin-left: 15px;
 }
 
 
@@ -381,6 +382,8 @@ textarea:focus {
   width: 60px;
   padding-bottom: 5px;
   padding-top: 0px;
+
+
 }
 
 .bottom-nav-container>a>button {
@@ -393,6 +396,7 @@ textarea:focus {
 
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: 10px;
 }
 
 
