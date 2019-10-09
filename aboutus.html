@@ -12,7 +12,9 @@
     <link rel="manifest" href="/manifest.json">
     <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
     <link rel="stylesheet" href="vivify.min.css">
-    <script> src = "script.js"</script>
+    <script>
+        src = "script.js"
+    </script>
     <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -23,26 +25,49 @@
     <div id="loading" class="loader-container vivify" id="loader">
         <div class="loader"></div>
     </div>
-<div class="spacer" style="height: 45px;"></div>
-<div class="top-navigation">
+    <div class="spacer" style="height: 45px;"></div>
+    <div class="top-navigation">
 
-    <div onclick="home()" class="logo-container">
-        <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
+        <div onclick="home()" class="logo-container">
+            <div class="logo-wrapper"> <img src="Branding/harrison-county-mark-01.svg"></div>
+
+        </div>
+
+        <a class="refresh-btn waves-effect" style="position: fixed; left: 6px; border-radius: 50px; " href="index.html">
+            <i class="material-icons">arrow_back</i>
+        </a>
+
+        <p class="page-indicator">About US</p>
 
     </div>
+    <style>
+        article>p {
+            font-size: 14px;
+        }
+    </style>
 
-    <a class="refresh-btn waves-effect" style="position: fixed; left: 6px; border-radius: 50px; "
-        href="index.html">
-        <i class="material-icons" >arrow_back</i>
-    </a>
+    <article style="margin: auto; width:90%;">
+        <img style="width: 100%;margin-top: 35px;border-radius: 7px;" src="images/about us.jpg">
+        <h3 style="color: #1c2857;font-family: aleo;font-size: 20px;">About Harrison County</h3>
+        <p>The Harrison County Development Commission was created in 1958 for the promotion and development of harbors,
+            seaports, industrial sites and other related facilities. </p>
+        <p>Of the six South Mississippi counties, Harrison County has the largest population and the greatest number of
+            cities. It is bordered on the east by industrialized Jackson County, on the west by Hancock County and the
+            John C. Stennis Space Center, to the north by Stone County and to the south by the Gulf of Mexico.</p>
+        <p>This strategic central position has been largely responsible for Harrison County’s business diversity. Part
+            of the Gulfport-Biloxi-Pascagoula metropolitan statistical area, the County has a wide mix of business
+            specialties: retail, manufacturing, pharmaceuticals, healthcare research, composite technology and
+            shipbuilding.</p>
+        <p>Harrison County, MS is made up of five cities: Pass Christian, Long Beach, Gulfport, Biloxi and D’Iberville
+            with each city contributing its own industries, amenities and character.</p>
+    </article>
 
-    <p class="page-indicator">About US</p>
 
-</div>
-
-<div class="content-iframe"><iframe is='x-frame-bypass' src="https://www.mscoast.org/about/about-harrison-countycontact-us"></iframe></div>
-
-    <script>window.onload = function () { document.getElementById("loading").style.display = "none" }</script>
+    <script>
+        window.onload = function () {
+            document.getElementById("loading").style.display = "none"
+        }
+    </script>
 </body>
 
 </html>
