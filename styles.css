@@ -487,7 +487,7 @@ input:focus {
 .search {
   position: fixed;
   left: 0px;
-  top: 45px;
+  top: 37px;
   background-color: white;
   z-index:51 ;
   padding-top: 10px;
