@@ -488,10 +488,34 @@ textarea:focus {
   z-index: 15
 }
 
-.search-filter>a {
+.filter-container {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  overflow: scroll;
+  z-index: 145;
+  top: 90px;
+  background-color: white;;
+  ;padding-top: 15px;;
+  
+}
+
+.search-filter {
+
+  white-space: nowrap;
+  margin: auto;
+  width: 340px;
+  ;
+  ;
+}
+
+.search-filter>a>button {
   display: inline-block;
   white-space: nowrap;
- 
+border: solid;
+border-width: 1px;
+border-color: lightgray;background-color: white;padding: 7px;
+border-radius: 5px;;;;;;;
 }
 
 .search-input {
@@ -526,7 +550,12 @@ textarea:focus {
   left: 115px;
 }
 
-.result-list > label {padding-top: 115px;;margin-left: 50px;;}
+.result-list>label {
+  padding-top: 145px;
+  ;
+  margin-left: 50px;
+  ;
+}
 
 #search>iframe {
   border: none;
@@ -570,7 +599,7 @@ textarea:focus {
   padding: 10px;
   border-radius: 50px;
 
-  margin-left: 20px;
+
   width: 100%;
   margin-top: -20px;
 
