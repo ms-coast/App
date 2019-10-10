@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -14,6 +15,7 @@ html {
   /*For Firefox*/
   -ms-overflow-style: none;
   /*For IE and Edge*/
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -358,12 +360,16 @@ textarea:focus {
 
 .bottom-nav-container {
   margin: auto;
-  width:335px;
+  width: 335px;
 }
 
-.filterDiv {display: none;}
+.filterDiv {
+  display: none;
+}
 
-.show {display: block}
+.show {
+  display: block
+}
 
 .bottom-nav-container>button {
   display: inline-block;
@@ -482,7 +488,11 @@ textarea:focus {
   z-index: 15
 }
 
-
+.search-filter>a {
+  display: inline-block;
+  white-space: nowrap;
+ 
+}
 
 .search-input {
   height: 40px;
@@ -505,7 +515,9 @@ textarea:focus {
   outline: none;
 }
 
-.show {display: block}
+.show {
+  display: block
+}
 
 .search-icon {
   top: 18px;
@@ -513,6 +525,8 @@ textarea:focus {
   color: #757575;
   left: 115px;
 }
+
+.result-list > label {padding-top: 115px;;margin-left: 50px;;}
 
 #search>iframe {
   border: none;
@@ -538,6 +552,11 @@ textarea:focus {
 .result-list {
   width: 100%;
   margin-top: 60px;
+}
+
+.result-list>li>a>p {
+  display: none;
+  ;
 }
 
 .result-list>li>a {
