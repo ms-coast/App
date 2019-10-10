@@ -515,7 +515,14 @@ textarea:focus {
 border: solid;
 border-width: 1px;
 border-color: lightgray;background-color: white;padding: 7px;
-border-radius: 5px;;;;;;;
+border-radius: 50px;
+margin-left: 5px;;
+transition:0.2s ease;
+}
+
+.search-filter>a>button:hover{
+  background-color: #012395; color: white;
+  border: none;;
 }
 
 .search-input {
@@ -553,8 +560,12 @@ border-radius: 5px;;;;;;;
 .result-list>label {
   padding-top: 145px;
   ;
-  margin-left: 50px;
-  ;
+  margin-left: 30px;
+  font-size: 14px;color:#012395;;
+}
+
+.result-list>label:focus {
+  color: blue;;
 }
 
 #search>iframe {
