@@ -941,6 +941,10 @@ input:focus {
 
 /*---------------------------------------Section Styling---------------------------------*/
 
+#workdev {display: none;;}
+
+#workdev:target {display:block; position: fixed;top: 0px; width: 100%;;;}
+
 #account {
   display: none;
   background-color: white;
