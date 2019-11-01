@@ -31,6 +31,10 @@ button:focus {
   outline: none;
 }
 
+
+
+
+
 .refresh-btn {
   position: fixed;
   right: 10px;
@@ -943,7 +947,10 @@ input:focus {
 
 #workdev {display: none;;}
 
-#workdev:target {display:block; position: fixed;top: 0px; width: 100%;;;}
+#workdev:target {display:block; position: fixed;top: 0px; width: 100%;;z-index: 50;;}
+#workdev > iframe {
+  width: 100%; margin-top: 50px;height: 100vh;background-color: rgb(255, 255, 255);position: relative;border: none;;;
+}
 
 #account {
   display: none;
