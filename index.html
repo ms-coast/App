@@ -169,8 +169,20 @@
     </section>
 
     <section id="account" class="account vivify fadeIn duration-250">
-        <iframe style="position: fixed; left: 0px; top: -200px;z-index: 150;background-color:white; width:100%; "
-           src="https://mscoast.azurewebsites.net/Account.html"></iframe>
+        <form action="https://mscoast.azurewebsites.net/Account/Login" method="post">
+            <input name="Username">
+            <input type="password" name="Password">
+            <button type="submit">
+                Button
+            </button>
+
+        </form>
+
+
+        <iframe is="x-frame-bypass" src="https://mscoast.azurewebsites.net"></iframe>
+        <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+
+        <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     </section>
 
     <section id="qpay" class="account vivify fadeIn duration-250">
