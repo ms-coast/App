@@ -44,7 +44,7 @@
         </div>
 
         <a class="refresh-btn waves-effect" style="position: fixed; right: 6px; border-radius: 50px; "
-            href="https://mscoast.azurewebsites.net" target="_blank">
+            href="index.html">
             <i class="material-icons ">refresh</i>
         </a>
 
@@ -69,6 +69,11 @@
             <a href="#search">
                 <button class="waves-effect">
                     <img src="Assets/Search.svg">
+                </button>
+            </a>
+            <a href="#search">
+                <button class="waves-effect">
+                    <img src="Assets/work-dev.svg">
                 </button>
             </a>
         </div>
@@ -169,20 +174,26 @@
     </section>
 
     <section id="account" class="account vivify fadeIn duration-250">
+        
+        <div class="account-form-container">
+            <h5 style="margin-bottom: 20px;;">Log In</h5>
         <form action="https://mscoast.azurewebsites.net/Account/Login" method="post">
-            <input name="Username">
-            <input type="password" name="Password">
-            <button type="submit">
-                Button
+            <div class="input-field col s6">
+          <input id="name" name="Username" type="text" class="validate">
+          <label for="name">User name</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input id="name" name="Username" type="password" class="validate">
+            <label for="pass">Password</label>
+          </div>
+          
+            <button class="btn blue darken-4" type="submit">
+              <i class="material-icons"></i>  Log In
             </button>
 
         </form>
-
-
-        <iframe is="x-frame-bypass" src="https://mscoast.azurewebsites.net"></iframe>
-        <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-
-        <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    </div>
     </section>
 
     <section id="qpay" class="account vivify fadeIn duration-250">

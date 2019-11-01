@@ -378,14 +378,14 @@ textarea:focus {
   border: none;
   transition: 0.5s ease;
   background-color: transparent;
+  width: 50px;
+  padding-left: 0px;
 
-  padding-left: 30px;
-  margin-left: 15px;
 }
 
 
 .bottom-nav-container>button>img {
-  width: 60px;
+
   padding-bottom: 5px;
   padding-top: 0px;
 
@@ -399,7 +399,7 @@ textarea:focus {
   border: none;
   transition: 0.5s ease;
   background-color: transparent;
-
+  width: 50px;
   padding-left: 0px;
   padding-right: 10px;
   margin-left: 10px;
@@ -489,7 +489,7 @@ input:focus {
   left: 0px;
   top: 37px;
   background-color: white;
-  z-index:51 ;
+  z-index: 51;
   padding-top: 10px;
   ;
 }
@@ -948,10 +948,15 @@ input:focus {
 
 }
 
+.account-form-container {
+  margin: auto; width: 90%;;
+}
+
 #account:target {
   display: block;
-  position: relative;
+  position: fixed;
   z-index: 15;
+  top: 52px;width: 100%;;
 }
 
 #qpay {
