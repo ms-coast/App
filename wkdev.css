@@ -41,14 +41,8 @@ html {scroll-behavior: smooth;}
 .navigation {
     margin: auto;
     width: 94%;
-    padding-top: 10px;
-    border-top: solid;
-    border-color: lightgray;
-    border-width: 1px;
-    border-bottom: solid;
-    padding-bottom: 25px;
-    border-bottom-width: 1px;
-    border-bottom-color: lightgray;
+    padding-top: 0px;
+
 }
 
 .home-navigation {
