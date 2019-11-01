@@ -399,9 +399,9 @@ textarea:focus {
   border: none;
   transition: 0.5s ease;
   background-color: transparent;
-  width: 65px;
+  width: 60px;
   padding-left: 0px;
-margin-left: -2px;
+margin-left: 3px;
  
 }
 

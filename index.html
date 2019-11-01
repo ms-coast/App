@@ -56,14 +56,15 @@
                     <img src="Assets/Payment.svg">
                 </button>
             </a>
-            <a href="#home">
-                <button class="waves-effect">
-                    <img src="Assets/Home.svg">
-                </button>
-            </a>
+
             <a href="#account">
                 <button class="waves-effect">
                     <img src="Assets/Account.svg">
+                </button>
+            </a>
+            <a href="#home">
+                <button class="waves-effect">
+                    <img src="Assets/Home.svg">
                 </button>
             </a>
             <a href="#search">
@@ -73,7 +74,7 @@
             </a>
             <a href="#search">
                 <button class="waves-effect">
-                    <img src="Assets/work-dev.svg">
+                    <img style="width: 57px;" src="Assets/work-dev.svg">
                 </button>
             </a>
         </div>
@@ -174,26 +175,26 @@
     </section>
 
     <section id="account" class="account vivify fadeIn duration-250">
-        
+
         <div class="account-form-container">
             <h5 style="margin-bottom: 20px;;">Log In</h5>
-        <form action="https://mscoast.azurewebsites.net/Account/Login" method="post">
-            <div class="input-field col s6">
-          <input id="name" name="Username" type="text" class="validate">
-          <label for="name">User name</label>
+            <form action="https://mscoast.azurewebsites.net/Account/Login" method="post">
+                <div class="input-field col s6">
+                    <input id="name" name="Username" type="text" class="validate" required>
+                    <label for="name">User name</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="pass" name="Username" type="password" class="validate" required>
+                    <label for="pass">Password</label>
+                </div>
+
+                <button class="btn blue darken-4 waves-effect" type="submit">
+                    <i class="material-icons"></i> Log In
+                </button>
+
+            </form>
         </div>
-
-        <div class="input-field col s6">
-            <input id="name" name="Username" type="password" class="validate">
-            <label for="pass">Password</label>
-          </div>
-          
-            <button class="btn blue darken-4" type="submit">
-              <i class="material-icons"></i>  Log In
-            </button>
-
-        </form>
-    </div>
     </section>
 
     <section id="qpay" class="account vivify fadeIn duration-250">
