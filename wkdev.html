@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>HCDC Workforce Development</title>
+    <title>GHS Workforce Development</title>
     <link rel="stylesheet" href="wkdev.css">
     <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,17 @@
     <link rel="stylesheet" href="vivify.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
     </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145321577-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145321577-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-145321577-2');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145321577-2');
+    </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -38,17 +41,21 @@
     </style>
         {{#each this}}
     <li>
-        <a href="" >
+        <a href="#view-hours" >
+            <div class="name-view vivify fadeOut delay-1750"><h5>Welcome Back, {{name}}</h5></div>
 <div class="data-items">
     <span style="display:none">{{lunchNumber}}</span>
     <details style="border-radius: 5px;">
-        <summary style="width: 100%;border-radius: 5px;" class="waves-effect" ><span>{{date}} </span>
+        <summary style="width: 100%;border-radius: 5px;" class="waves-effect" >
+        
+            <span>{{date}} </span>
 
             <br>
                 <span style="font-size: 15px;font-weight: bold;">{{hoursWorked}} Hours</span>
            <br> 
-            <span>${{paid}}</span>
+            <span>${{paid}}.0</span>
                 <br>
+                <h6 style="font-size: 12px;text-align: right;margin-top: -10px;">{{placeOfWork}} {{other}}</h6>
         </summary>
       <div class="divider"></div>
         {{productivity}}
@@ -63,7 +70,8 @@
 
 <body class="vivify fadeIn delay-400">
 
-    
+
+   
     <script>
         function load() {
             document.getElementsByClassName("work")[0].style.display = "block";
@@ -72,20 +80,30 @@
     <div class="home" id="home">
         <div class="home-navigation">
          
-            <div id="navigation" class="navigation">
+            <div id="navigation" style="border-top: none;;" class="navigation">
                 <a href="#log-hours"> <button class="waves-effect waves-dark white"><img
                             src="assets/assignment_returned-24px.svg">Log My
                         Hours</button></a>
                 <a href="#view-hours">
-                    <button class="waves-effect waves-dark white"><img src="assets/assessment-24px.svg">View My
+                    <button class="waves-effect  white"><img src="assets/assessment-24px.svg">View My
                         Hours</button></a>
                 <a href="#feedback">
                     <button class="waves-effect waves-dark white"><img src="assets/contact_support-24px (1).svg">Give
                         Feedback</button></a>
+                <style>
+                    .waves-effect.waves-teal .waves-ripple {
+                        /* The alpha value allows the text and background color
+   of the button to still show through. */
+                        background-color: rgba(50, 42, 161, 0.65);
+                    }
+                </style>
+                <a href="#popup">
+                    <div class="new waves-effect"><img src="assets/partnership.svg"></div>
+                </a>
             </div>
-
+            <div class="iframe-open" id="popup"><a href=""><i class="material-icons close-btn">close</i></a><iframe
+                    class="open-frame" src="https://m.mscoastaljobs.com/internships"></iframe></div>
             <section class="log-hours" id="log-hours">
-
                 <a href="#" class="waves-effect"><i class="material-icons back-btn">arrow_back</i></a>
 
                 <h6 class="section-header">Log Hours</h6>
@@ -95,8 +113,8 @@
             <div id="view-hours" class="view-hours">
 
                 <a href="#" class="waves-effect"><i class="material-icons back-btn">arrow_back</i></a>
-                <a href="https://ghswkdev.netlify.com" class="waves-effect"><i
-                        class="material-icons refresh-btn" id="up">refresh</i></a>
+                <a href="https://ghswkdev.netlify.com" class="waves-effect"><i class="material-icons refresh-btn"
+                        id="up">refresh</i></a>
                 <h6 class="section-header">View Hours</h6>
                 <script>
                     $(window).scroll(function () {
@@ -108,25 +126,59 @@
                         }
                     });
                 </script>
-                
-                    <div class="search-wrapper vivify fadeIn duration-500">
-                        <div class="search-input-container"> <input  autofocus class="search-input"
-                                type="text" id="mySearch" onkeydown="myFunction()" placeholder="&emsp; Enter Lunch Number"
-                                title="Click To Search For Jobs" minlength="5" required><button onclick="search()" class="btn-flat waves-effect confirm-button right vivify fadeInRight"
-                                  type="submit" >Verify</button>
-                        </div>
-    
-                    </div>
-             
-                    <ul id="myMenu" class="result-list vivify fadeIn " style="list-style-type: none;text-decoration: none;">
 
-                        <div style="margin: auto;;">
-                              
-                                <div style="padding-top: 80px;" id="items"></div>
-                            </ul>
-              <script>
-              
-              </script>
+                <div class="search-wrapper vivify fadeIn duration-500">
+                    <div class="search-input-container" style="margin-left: -15px;"> <input style="padding-left: 10px;;"
+                            autofocus class="search-input" type="text" id="mySearch" onkeydown="myFunction()"
+                            placeholder="&emsp; Enter Lunch Number" title="Click To Search For Jobs" minlength="5"
+                            required><button onclick="search()"
+                            class="btn-flat waves-effect confirm-button right vivify fadeInRight"
+                            type="submit">Verify</button>
+                    </div>
+
+                </div>
+
+                <ul id="myMenu" class="result-list vivify fadeIn " style="list-style-type: none;text-decoration: none;">
+
+                    <div style="margin: auto;;">
+                        <div class="report">
+                            <button onclick="reportissue()" class="btn-flat waves-effect">Report An Error With Your
+                                Hours</button>
+                        </div>
+                        <div style="padding-top: 80px;" id="items"></div>
+
+                        <div class="report-sect vivify fadeIn" style="display: none;" id="report">
+                            <form>
+
+                                <div id="lunch-number" class="input-field">
+                                    <input name="entry.1866640669" id="number" type="number" class="validate" required>
+                                    <label for="number">Lunch Number</label>
+                                </div>
+
+                                <div id="lunch-number" class="input-field">
+                                    <input name="entry.1866640669" id="email" type="email" class="validate" required>
+                                    <label for="email">School E-Mail</label>
+                                </div>
+
+                                <div id="lunch-number" class="input-field">
+                                    <input name="entry.1866640669" id="fix" type="text" class="validate" required>
+                                    <label for="fix">Enter Your Issue</label>
+                                </div>
+
+                                <div class="form-btn-container"><button type="submit" class="btn blue darken-4"
+                                        style="background-color: #012395 !important;"><i
+                                            class="material-icons left">lock</i>Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                </ul>
+
+
+                <script>
+                    function reportissue() {
+                        document.getElementsByClassName("report-sect").style.display = "block"
+                    }
+                </script>
                 <script>
                     function myFunction() {
                         var e, s, t;
@@ -145,7 +197,7 @@
                 </script>
 
             </div>
-         
+
 
 
             <section id="feedback">
