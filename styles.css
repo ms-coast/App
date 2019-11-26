@@ -538,6 +538,9 @@ input:focus {
   margin-left: 5px;
   ;
   transition: 0.2s ease;
+
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .search-filter>a>button:hover {
