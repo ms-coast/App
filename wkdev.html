@@ -2,15 +2,18 @@
 <html>
 
 <head>
-    <title>GHS Workforce Development</title>
+    <meta name="robots" content="noindex" />
+    <title>HCDC Workforce Development</title>
     <link rel="stylesheet" href="wkdev.css">
+    <meta name="google-site-verification" content="Bq8ht9ikLG_-5FKs9mlF74bN0csu03E2ImE84n1bgCk" />
     <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="manifest" href="manifest.json">
+    <meta name="description" content="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="vivify.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
@@ -29,9 +32,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/d69fbd6d-08b6-4697-9a98-fc5bcb8116aa', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/workforceDevelopment/data', function (data) {
                 var template = Handlebars.compile($('#item-template').html())
-                $('#items').html(template(data))
+                $('#items').html(template(data.data))
             })
         })
     </script>
@@ -42,8 +45,10 @@
         {{#each this}}
     <li>
         <a href="#view-hours" >
-            <div class="name-view vivify fadeOut delay-1750"><h5>Welcome Back, {{name}}</h5></div>
-<div class="data-items">
+            <div class="name-view vivify fadeOut delay-1750 duration-100"><h5 class="vivify fadeOut delay-1000 ">Welcome Back, {{name}}</h5> <div class="progress" style="background-color: lightgray;">
+                <div class="indeterminate black"></div>
+            </div></div>
+<div class="data-items vivify fadeIn delay-2000">
     <span style="display:none">{{lunchNumber}}</span>
     <details style="border-radius: 5px;">
         <summary style="width: 100%;border-radius: 5px;" class="waves-effect" >
@@ -70,8 +75,24 @@
 
 <body class="vivify fadeIn delay-400">
 
-
+<div class="offline" style="display: none;">
+    <div class="offline-text-container">
+     <h5>Under Maintenance</h5>
+     <p>We are so sorry for the inconvenience workforce development will be under maintenance until 9:00am today.</p>
+    </div>
+</div>
    
+    <div class="workforce-dev-loader work">
+        <div>
+            <img src="Assets/GHS App Loading.svg" alt="Work Force Development Logo">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+            <p style="text-align: center;" class="vivify fadeIn delay-3000">Loading may take longer than expected due to
+                internet connection speed.</p>
+        </div>
+        <p class="branding"><strong>GHS</strong>App</p>
+    </div>
     <script>
         function load() {
             document.getElementsByClassName("work")[0].style.display = "block";
@@ -79,41 +100,43 @@
     </script>
     <div class="home" id="home">
         <div class="home-navigation">
-         
-            <div id="navigation" style="border-top: none;;" class="navigation">
+            <div class="logo-position">
+                <div class="home-logo-container">
+                    <img src="Branding/Logo.svg">
+                </div>
+            </div>
+            <div id="navigation" class="navigation">
                 <a href="#log-hours"> <button class="waves-effect waves-dark white"><img
-                            src="assets/assignment_returned-24px.svg">Log My
+                            src="assets/assignment_returned-24px.svg">Log Todays
                         Hours</button></a>
                 <a href="#view-hours">
-                    <button class="waves-effect  white"><img src="assets/assessment-24px.svg">View My
+                    <button class="waves-effect waves-dark white"><img src="assets/assessment-24px.svg">View My
                         Hours</button></a>
                 <a href="#feedback">
                     <button class="waves-effect waves-dark white"><img src="assets/contact_support-24px (1).svg">Give
                         Feedback</button></a>
-                <style>
-                    .waves-effect.waves-teal .waves-ripple {
-                        /* The alpha value allows the text and background color
+                        <style>
+                          .waves-effect.waves-teal .waves-ripple {
+   /* The alpha value allows the text and background color
    of the button to still show through. */
-                        background-color: rgba(50, 42, 161, 0.65);
-                    }
-                </style>
-                <a href="#popup">
-                    <div class="new waves-effect"><img src="assets/partnership.svg"></div>
-                </a>
+    background-color: rgba(50, 42, 161, 0.65);
+  }
+          
+                        </style>
+                        <a href="#popup"><div class="new waves-effect"><img src="assets/partnership.svg"></div></a> 
             </div>
-            <div class="iframe-open" id="popup"><a href=""><i class="material-icons close-btn">close</i></a><iframe
-                    class="open-frame" src="https://m.mscoastaljobs.com/internships"></iframe></div>
+          <div class="iframe-open" id="popup"><a href=""><i class="material-icons close-btn">close</i></a><iframe class="open-frame" src="https://m.mscoastaljobs.com/internships"></iframe></div>
             <section class="log-hours" id="log-hours">
-                <a href="#" class="waves-effect"><i class="material-icons back-btn">arrow_back</i></a>
+                <a href="https://hcdcapp.netlify.com/wkdev.html" class="waves-effect"><i class="material-icons back-btn">arrow_back</i></a>
 
                 <h6 class="section-header">Log Todays Hours</h6>
-                <iframe class="vivify fadeIn duration-500" src="https://ghswkdev.netlify.com/formlog.html"></iframe>
+                <iframe class="vivify fadeIn duration-500" src="https://workforcedevelopment.netlify.com/formlog.html"></iframe>
             </section>
 
             <div id="view-hours" class="view-hours">
 
                 <a href="#" class="waves-effect"><i class="material-icons back-btn">arrow_back</i></a>
-                <a href="/wkdev.html" class="waves-effect"><i class="material-icons refresh-btn"
+                <a href="https://workforcedevelopment.netlify.com" class="waves-effect"><i class="material-icons refresh-btn"
                         id="up">refresh</i></a>
                 <h6 class="section-header">View Hours</h6>
                 <script>
@@ -128,7 +151,7 @@
                 </script>
 
                 <div class="search-wrapper vivify fadeIn duration-500">
-                    <div class="search-input-container" style="margin-left: -15px;"> <input style="padding-left: 10px;;"
+                    <div class="search-input-container" > <input style="padding-left: 10px;;"
                             autofocus class="search-input" type="text" id="mySearch" onkeydown="myFunction()"
                             placeholder="&emsp; Enter Lunch Number" title="Click To Search For Jobs" minlength="5"
                             required><button onclick="search()"
@@ -142,28 +165,27 @@
 
                     <div style="margin: auto;;">
                         <div class="report">
-                            <button onclick="reportissue()" class="btn-flat waves-effect">Report An Error With Your
-                                Hours</button>
+                            <button onclick="reportissue()" class="btn-flat waves-effect">Report An Error With Your Hours</button>
                         </div>
                         <div style="padding-top: 80px;" id="items"></div>
-
+                       
                         <div class="report-sect vivify fadeIn" style="display: none;" id="report">
                             <form>
+                              
+            <div id="lunch-number" class="input-field">
+                <input name="entry.1866640669" id="number" type="number" class="validate" required>
+                <label for="number">Lunch Number</label>
+            </div>
 
-                                <div id="lunch-number" class="input-field">
-                                    <input name="entry.1866640669" id="number" type="number" class="validate" required>
-                                    <label for="number">Lunch Number</label>
-                                </div>
+            <div id="lunch-number" class="input-field">
+                <input name="entry.1866640669" id="email" type="email" class="validate" required>
+                <label for="email">School E-Mail</label>
+            </div>
 
-                                <div id="lunch-number" class="input-field">
-                                    <input name="entry.1866640669" id="email" type="email" class="validate" required>
-                                    <label for="email">School E-Mail</label>
-                                </div>
-
-                                <div id="lunch-number" class="input-field">
-                                    <input name="entry.1866640669" id="fix" type="text" class="validate" required>
-                                    <label for="fix">Enter Your Issue</label>
-                                </div>
+            <div id="lunch-number" class="input-field">
+                <input name="entry.1866640669" id="fix" type="text" class="validate" required>
+                <label for="fix">Enter Your Issue</label>
+            </div>
 
                                 <div class="form-btn-container"><button type="submit" class="btn blue darken-4"
                                         style="background-color: #012395 !important;"><i
@@ -173,7 +195,7 @@
                         </div>
                 </ul>
 
-
+            
                 <script>
                     function reportissue() {
                         document.getElementsByClassName("report-sect").style.display = "block"
