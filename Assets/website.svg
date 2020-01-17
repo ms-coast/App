@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="56" viewBox="0 0 65 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31" data-name="Rectangle 31" width="65" height="56"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_30" data-name="Rectangle 30" width="65" height="56" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="website" clip-path="url(#clip-path)">
+    <rect width="65" height="56" fill="#fff"/>
+    <g id="Home" clip-path="url(#clip-path)">
+      <g id="Group_22" data-name="Group 22" clip-path="url(#clip-path-2)">
+        <g id="Group_21" data-name="Group 21">
+          <rect id="Rectangle_29" data-name="Rectangle 29" width="65" height="56" fill="#fff"/>
+          <text id="Website-2" data-name="Website" transform="translate(12 35)" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="12">Website</tspan></text>
+          <g id="public-24px" transform="translate(20 10)">
+            <path id="Path_442" data-name="Path 442" d="M0,0H24V24H0Z" fill="none"/>
+            <path id="Path_443" data-name="Path 443" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM4,12a8.028,8.028,0,0,1,.21-1.78L8.99,15v1a2.006,2.006,0,0,0,2,2v1.93A8.012,8.012,0,0,1,4,12Zm13.89,5.4a1.993,1.993,0,0,0-1.9-1.4h-1V13a1,1,0,0,0-1-1h-6V10h2a1,1,0,0,0,1-1V7h2a2.006,2.006,0,0,0,2-2V4.59a7.978,7.978,0,0,1,2.9,12.81Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
